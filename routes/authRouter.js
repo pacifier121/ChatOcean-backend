@@ -1,20 +1,21 @@
 const router = require('express').Router();
 const passport = require('passport');
 
-router.post('/register', async(req, res) => {
-    
-})
-
-
 
 // Google OAuth
 router.get('/google', passport.authenticate('google', { scope: ['profile'] }));
 
-
 router.get('/google/callback', passport.authenticate('google', {
-    failureRedirect: '/login',
-    successRedirect: 'http://localhost:3000/'
+    failureRedirect: 'http://localhost:8000/register',
+    successRedirect: 'http://localhost:8000/login'
 }))
+
+// router.get('/checkAuthentication', (req, res) => {
+//     if (req.user) {
+//         return res.send({ authenticated: true });
+//     }
+//     return { authenticated: false }
+// })
 
 
 module.exports = router;

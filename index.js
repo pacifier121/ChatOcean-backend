@@ -6,6 +6,7 @@ const path = require("path");
 const session = require('express-session');
 const MongoStore = require('connect-mongo')(session);
 const passport = require("passport");
+const cors = require('cors');
 require('./config/passport')(passport);
 
 // Configuting .env file
@@ -27,6 +28,9 @@ app.use(passport.session())
 app.use(express.json());
 app.use(helmet());
 app.use(morgan("dev"));
+app.use(cors({
+  origin: '*'
+}))
 
 // To use images on server
 app.use("/images", (_, res, next) => {
@@ -36,6 +40,7 @@ app.use("/images", (_, res, next) => {
 app.use("/images/", express.static(path.join(__dirname, "public/")));
 
 // Registering routers
+app.use('/', require('./routes/indexRouter'));
 app.use("/auth", require('./routes/authRouter'));
 app.use("/user", require('./routes/userRouter'));
 app.use("/post", require('./routes/postRouter'));
