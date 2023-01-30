@@ -14,23 +14,34 @@ module.exports = (passport) => {
             googleId: profile.id,
             firstName: profile.name.givenName,
             lastName: profile.name.familyName,
-            avatar: profile.photos[0]
+            avatar: profile.photos[0].value
         }
+        console.log(profile);
         try {
            let user = await User.findOne({ googleId: newUser.googleId });
            if (user) {
                 done(null, user);
            }
-           done(null, false, { err: "User not found" });
+        //    done(null, false, { err: "User not found" });
+            const brandNewUser = new User({
+                username: newUser.firstName + Date.now(),
+                email: newUser.firstName + Date.now() + '@temp.com',
+                password: newUser.firstName + Date.now() + 'pass',
+                firstName: newUser.firstName,
+                lastName: newUser.lastName,
+                avatar: newUser.avatar
+            })
+            await brandNewUser.save();
+            done(null, brandNewUser);
         } catch (err) {
            console.log(err); 
         }
     }))
 
     passport.serializeUser((user, done) => {
-        done(null, user);
+        done(null, user.id);
     })
-    passport.deserializeUser((user, done) => {
-        done(null, user);
+    passport.deserializeUser((id, done) => {
+        User.findById(id, (err, user) => done(err, user));
     })
 }

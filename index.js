@@ -20,7 +20,8 @@ app.use(session({
   secret: 'mysecret',
   resave: false,
   saveUninitialized: false,
-  store: new MongoStore({ mongooseConnection: mongoose.connection })
+  store: new MongoStore({ mongooseConnection: mongoose.connection }),
+  maxAge: 24*60*60*100
 }))
 
 app.use(passport.initialize());
