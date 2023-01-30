@@ -2,30 +2,31 @@ const express = require("express");
 const mongoose = require("mongoose");
 const morgan = require("morgan");
 const helmet = require("helmet");
-const authRouter = require("./routes/authRouter");
-const userRouter = require("./routes/userRouter");
-const postRouter = require("./routes/postRouter");
-const storyRouter = require("./routes/storyRouter");
 const path = require("path");
-const dotenv = require('dotenv');
+const session = require('express-session');
+const MongoStore = require('connect-mongo')(session);
+const passport = require("passport");
+require('./config/passport')(passport);
 
 // Configuting .env file
-dotenv.config();
-
-// Connecting to database
-mongoose.set('strictQuery', false);
-mongoose.connect(process.env.MONGO_URL, 
-  { useNewUrlParser: true, useUnifiedTopology: true }
-  , () => {
-    console.log("Connected to DB")
-  });
+require('dotenv').config();
+require('./config/db');
 
 
 // Initializing app
 const app = express();
+app.use(session({
+  secret: 'mysecret',
+  resave: false,
+  saveUninitialized: false,
+  store: new MongoStore({ mongooseConnection: mongoose.connection })
+}))
+
+app.use(passport.initialize());
+app.use(passport.session())
 app.use(express.json());
 app.use(helmet());
-app.use(morgan("common"));
+app.use(morgan("dev"));
 
 // To use images on server
 app.use("/images", (_, res, next) => {
@@ -35,10 +36,10 @@ app.use("/images", (_, res, next) => {
 app.use("/images/", express.static(path.join(__dirname, "public/")));
 
 // Registering routers
-app.use("/auth", authRouter);
-app.use("/user", userRouter);
-app.use("/post", postRouter);
-app.use("/story", storyRouter);
+app.use("/auth", require('./routes/authRouter'));
+app.use("/user", require('./routes/userRouter'));
+app.use("/post", require('./routes/postRouter'));
+app.use("/story", require('./routes/storyRouter'));
 
 
 // Listening on port
