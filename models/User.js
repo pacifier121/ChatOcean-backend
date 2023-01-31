@@ -24,6 +24,23 @@ const UserSchema = mongoose.Schema({
     },
     avatar: {
         type: String,
+    },
+    coverImg: {
+        type: String,
+    },
+    dateOfBirth: {
+        type: String,
+    },
+    from: {
+        type: String
+    },
+    followers: {
+        type: Array,
+        default: []
+    },
+    followings: {
+        type: Array,
+        default: []
     }
 }, {
     timestamps: true

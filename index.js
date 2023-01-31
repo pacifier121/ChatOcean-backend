@@ -34,11 +34,11 @@ app.use(cors({
 }))
 
 // To use images on server
-app.use("/images", (_, res, next) => {
+app.use("/public", (_, res, next) => {
   res.set("Cross-Origin-Resource-Policy", "cross-origin");
   next();
 });
-app.use("/images/", express.static(path.join(__dirname, "public/")));
+app.use("/public/", express.static(path.join(__dirname, "public/")));
 
 // Registering routers
 app.use('/', require('./routes/indexRouter'));
