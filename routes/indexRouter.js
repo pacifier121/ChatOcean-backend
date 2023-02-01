@@ -16,6 +16,8 @@ router.get('/register', async(req, res) => {
     res.redirect('http://localhost:3000/register?msg=notfound');
 })
 
+
+// Normal form login/register
 router.post('/register', async(req, res) => {
     try {
         let userDetails = req.body;
