@@ -87,5 +87,24 @@ router.post('/post', multi_upload_middleware,  async(req, res) => {
 })
 
 
+// Like/Unlike a post
+router.put('/:postId/like', async(req, res) => {
+    try {
+        const post = await Post.findById(req.params.postId);
+        if (!post) return res.status(404).json({ err: "Post not found" });
+        if (post.likes.includes(req.body.userId)) {
+            await Post.findByIdAndUpdate(req.params.postId, { $pull : { likes: req.body.userId }});
+            return res.status(200).json({ msg: "Post was unliked" })
+        } else {
+            await Post.findByIdAndUpdate(req.params.postId, { $push : { likes: req.body.userId }});
+            return res.status(200).json({ msg: "Post was liked" })
+        }
+    } catch (err) {
+        console.log(err);
+        res.status(500).json(err);
+    }
+})
+
+
 
 module.exports = router;

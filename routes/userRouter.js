@@ -176,4 +176,23 @@ router.get('/followings/:userId', async(req, res) => {
 })
 
 
+// Set post as favorite
+router.put('/:userId/favorite', async(req, res) => {
+    try {
+        const user = await User.findById(req.params.userId);
+        if (!user) throw new Error("No such user found!"); 
+        
+        if (user.favoritePosts.includes(req.body.postId)) {
+            await User.findByIdAndUpdate(req.params.userId, { $pull : { favoritePosts: req.body.postId }});
+            return res.status(200).json({ msg: "Post was removed from favorite" })
+        } else {
+            await User.findByIdAndUpdate(req.params.userId, { $push : { favoritePosts: req.body.postId }});
+            return res.status(200).json({ msg: "Post was added to favorite" })
+        }
+    } catch (err) {
+        console.log(err); 
+    }
+})
+
+
 module.exports = router;

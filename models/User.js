@@ -41,6 +41,10 @@ const UserSchema = mongoose.Schema({
     followings: {
         type: Array,
         default: []
+    },
+    favoritePosts: {
+        type: Array,
+        default: []
     }
 }, {
     timestamps: true
