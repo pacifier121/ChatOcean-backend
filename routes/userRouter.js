@@ -4,6 +4,7 @@ const Post = require('../models/Post');
 const { removeFields } = require('../constants/constants');
 const multer = require('multer');
 const path = require('path');
+const fs = require('fs');
 
 // Get user
 router.get('/user', async(req, res) => {
@@ -81,6 +82,28 @@ router.put('/update', multi_upload,  async(req, res) => {
     }
 })
 
+
+// Delete user
+router.delete('/user/:userId', async(req, res) => {
+    try {
+        const user = await User.findById(req.params.userId);
+        if (!user) throw new Error("No such user found");
+
+        // Delete all posts of user
+        await Post.deleteMany({ userId: user._id });
+        
+        // Delete all the images of user
+        fs.unlink(path.join(__dirname, '../public/' + user.avatar), () => { });
+        fs.unlink(path.join(__dirname, '../public/' + user.coverImg), () => { });
+        
+        // Now delete the user
+        await User.findByIdAndDelete(req.params.userId);
+        res.status(200).json({ msg: "User deleted successfully" });
+    } catch (err) {
+       console.log(err);
+       res.status(500).json(err); 
+    }
+})
 
 // Get user posts
 router.get('/posts/:userId', async(req, res) => {

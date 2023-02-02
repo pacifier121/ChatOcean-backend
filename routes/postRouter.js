@@ -3,6 +3,7 @@ const { removeFields } = require('../constants/constants');
 const User = require('../models/User');
 const multer = require('multer');
 const path = require('path');
+const { unlink } = require('fs');
 
 const router = require('express').Router();
 
@@ -64,12 +65,14 @@ const multi_upload_middleware = (req, res, next) => {
 // Post a post
 router.post('/post', multi_upload_middleware,  async(req, res) => {
     const content = [];
-    const type = JSON.parse(req.body.type);
-    for (let i = 0; i < req.files.length; i++){
-        content.push({
-            type: type[i],
-            src: req.files[i].filename
-        })
+    if (req.body.type) {
+        const type = JSON.parse(req.body.type);
+        for (let i = 0; i < req.files.length; i++){
+            content.push({
+                type: type[i],
+                src: req.files[i].filename
+            })
+        }
     }
     try {
         const newPost = new Post({
@@ -86,6 +89,24 @@ router.post('/post', multi_upload_middleware,  async(req, res) => {
     }
 })
 
+// Delete a post
+router.delete('/post/:postId', async(req, res) => {
+    try {
+        const post = await Post.findById(req.params.postId);
+        if (!post) return res.status(404).json({ err: "Post not found" });
+        
+        // Now delete the post
+        post.content.forEach(item => {
+            unlink(path.join(__dirname, '../public/' + item.src), () => {});
+        })
+        
+        await Post.findByIdAndDelete(post._id);
+        res.status(200).json({ msg: "Post has been deleted!" });
+    } catch (err) {
+        console.log(err)
+        res.status(500).json(err); 
+    }
+})
 
 // Like/Unlike a post
 router.put('/:postId/like', async(req, res) => {
