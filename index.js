@@ -40,6 +40,8 @@ app.use("/public", (_, res, next) => {
 });
 app.use("/public/", express.static(path.join(__dirname, "public/")));
 
+
+
 // Registering routers
 app.use('/', require('./routes/indexRouter'));
 app.use("/auth", require('./routes/authRouter'));
