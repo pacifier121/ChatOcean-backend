@@ -105,6 +105,28 @@ router.put('/:postId/like', async(req, res) => {
     }
 })
 
+// Get post's states
+router.get('/states/:postId/:userId', async(req, res) => {
+    try {
+        let postStates = { isLiked: false, isFavorite: false, isCommented: false, 
+                totalLikes: 0, totalComments: 0, comments: [] }
+
+        const post = await Post.findById(req.params.postId);
+        if (!post) throw new Error("No such post found!");
+        if (post.likes.includes(req.params.userId)) postStates.isLiked = true;
+        postStates.totalLikes = post.likes.length;
+
+        const user = await User.findById(req.params.userId);
+        if (!user) throw new Error("No such user found!");
+        if (user.favoritePosts.includes(req.params.postId)) postStates.isFavorite = true;
+        postStates.totalComments = post.comments.length;
+        
+        res.status(200).json(postStates);
+    } catch (err) {
+        console.log(err);
+        res.status(500).json(err);
+    }
+})
 
 
 module.exports = router;

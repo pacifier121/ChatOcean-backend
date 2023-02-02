@@ -2,6 +2,8 @@ const router = require('express').Router();
 const User = require('../models/User');
 const Post = require('../models/Post');
 const { removeFields } = require('../constants/constants');
+const multer = require('multer');
+const path = require('path');
 
 // Get user
 router.get('/user', async(req, res) => {
@@ -23,16 +25,59 @@ router.get('/user', async(req, res) => {
     }
 })
 
-// Update user
-router.put('/user', async(req, res) => {
-    try {
-        let user = await User.findByIdAndUpdate(req.body.userId, req.body.updates);
 
-        if (!user) return res.status(404).json({ err: 'No such user found'});
-        res.status(200).json({ msg: "Updated successfully" });
+// For uploading files
+const storage = multer.diskStorage({
+  destination: (req, file, cb) => {
+     cb(null, path.join(__dirname, './../public/'))
+  },
+  filename: (req, file, cb) => {
+     cb(null, Date.now() + file.originalname);
+  }
+})
+
+const multi_upload = multer({ storage }).array('images', 2);
+
+// Update user
+router.put('/update', multi_upload,  async(req, res) => {
+    try {
+        const user = await User.findById(req.body.userId);
+        if (!user) throw new Error("No such user found");
+        let updates = req.body;
+        
+        // Checking existing user emails and usernames
+        let alreadyUser = null;
+        if (req.body.email) alreadyUser = await User.findOne({ email: req.body.email });
+        if (alreadyUser) throw new Error("User with same email exists already!");
+        
+        if (req.body.username) alreadyUser = await User.findOne({ username: req.body.username }) ;
+        if (alreadyUser) throw new Error("User with same username exists already!");
+        
+        // Checking password correctness
+        if (req.body.oldPassword && !req.body.newPassword) throw new Error("New password can't be empty");
+        if (!req.body.oldPassword && req.body.newPassword) throw new Error("Old password can't be empty");
+        if (req.body.oldPassword){
+            if (!bcrypt.compare(req.body.oldPassword, user.password)) throw new Error("Incorrect old password!");
+            else updates.password = bcrypt.hash(req.body.newPassword);
+        } 
+
+        // For storing uploaded files info
+        const filesSrc = req.files.map(f => f.filename);
+        const filesType = JSON.parse(req.body.types);
+        for (let i = 0; i < filesSrc.length; i++){
+            updates[filesType[i]] = filesSrc[i];
+        } 
+
+        // Removing unnecessary fields
+        const userId = req.body.userId;
+        updates = removeFields(updates, ['types', 'userId'])
+        
+        await User.findByIdAndUpdate(userId, updates);
+
+        res.status(200).json({ msg: "Profile updated successfully" });
     } catch (err) {
         console.log(err);
-        res.status(500).json(err);
+        res.status(500).json({ err: err.message });
     }
 })
 

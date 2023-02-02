@@ -45,6 +45,9 @@ const UserSchema = mongoose.Schema({
     favoritePosts: {
         type: Array,
         default: []
+    },
+    isAdmin: {
+        type: Boolean,
     }
 }, {
     timestamps: true
