@@ -1,10 +1,20 @@
 const chalk = require('chalk');
 const User = require('../models/User');
+const Console = require('console').Console;
+const fs = require('fs');
+
+
+// For console logging
+const stream = fs.createWriteStream('./socket/socketLog.log');
+const console = new Console(stream, stream);    // Same stream for both stdout and stderr
+
 
 let users = [];
 
 const addUser = (userId, socketId) => {
-    users.push({ userId, socketId });
+    const user = users.find(u => u.userId === userId);
+    if (!user) users.push({ userId, socketId });
+    else user.socketId = socketId;
     console.log(`User ${chalk.green('connected')} : ${chalk.blue(socketId)}`);
 }
 
@@ -98,6 +108,8 @@ const socketEventsHandler = (io) => {
                     if (socketId) tempOnlineFriends.push(f);
                 })
                 const onlineFriends = await User.find({ _id: { $in : tempOnlineFriends } });
+                const offlineFriends = await User.find({ $and : [{ _id: { $in : user.followings } },{ _id: { $in : user.followings } }] });
+                console.log(offlineFriends);
                 const userSocketId = getSocketId(userId);
                 io.to(userSocketId).emit('updateOnlineFriends', onlineFriends);
             } catch (err) {
@@ -107,5 +119,9 @@ const socketEventsHandler = (io) => {
     })
     
 }
+
+setInterval(() => {
+    console.log(chalk.bgBlue('Online users: ') + ' ' + chalk.blue(users.map(u => u.userId)));
+}, 5*1000);
 
 module.exports = socketEventsHandler;

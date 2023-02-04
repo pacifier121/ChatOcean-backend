@@ -1,0 +1,74 @@
+[44mOnline users: [49m 
+User [31mdisconnected[39m : [34mEgCFqQxN7WZKmyU1AAAB[39m
+Error: SocketError: Disconnect: No such user found
+    at Socket.<anonymous> (/home/pacifire/Programs/Web/FullStack/chat-ocean/api/socket/socketEvents.js:79:34)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+User [32mconnected[39m : [34m9cnzoQjyFOfaHmS-AAAH[39m
+[
+  {
+    _id: new ObjectId("63dd0e4025a6e3b1cbdc8430"),
+    username: 'pacifire',
+    email: 'prashantrawat2jangamer@gmail.com',
+    password: '$2a$08$SMEo4KGaBUVPS6XluvJ1KeyLxWZ4zb9SigCUN2KlbJrkKYyKvmIme',
+    followers: [ '63dd1bc425a6e3b1cbdc8484', '63ddbc66c36ae2b574c29d0d' ],
+    followings: [ '63dd1bc425a6e3b1cbdc8484', '63ddbc66c36ae2b574c29d0d' ],
+    favoritePosts: [],
+    createdAt: 2023-02-03T13:38:08.848Z,
+    updatedAt: 2023-02-04T10:47:17.279Z,
+    __v: 0,
+    avatar: '1675507637011IMG-20221219-WA0093.jpg'
+  },
+  {
+    _id: new ObjectId("63ddbc66c36ae2b574c29d0d"),
+    username: 'stephen',
+    email: 'g@g.com',
+    password: '$2a$08$92p/IiOfHGgvLAO9I7cj0.g7fzAbojYimdmezRqi5RaxhExoCcg26',
+    followers: [ '63dd0e4025a6e3b1cbdc8430', '63dd1bc425a6e3b1cbdc8484' ],
+    followings: [ '63dd1bc425a6e3b1cbdc8484', '63dd0e4025a6e3b1cbdc8430' ],
+    favoritePosts: [],
+    createdAt: 2023-02-04T02:01:10.619Z,
+    updatedAt: 2023-02-04T14:44:38.815Z,
+    __v: 0,
+    avatar: '1675507689018stephen.jpeg'
+  }
+]
+User [31mdisconnected[39m : [34mckq7VTAakxXnsVwJAAAF[39m
+Error: SocketError: Disconnect: No such user found
+    at Socket.<anonymous> (/home/pacifire/Programs/Web/FullStack/chat-ocean/api/socket/socketEvents.js:79:34)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[44mOnline users: [49m [34m63dd1bc425a6e3b1cbdc8484[39m
+User [32mconnected[39m : [34mTMf7DA5znRIsiojdAAAJ[39m
+9cnzoQjyFOfaHmS-AAAH  is online
+[
+  {
+    _id: new ObjectId("63dd0e4025a6e3b1cbdc8430"),
+    username: 'pacifire',
+    email: 'prashantrawat2jangamer@gmail.com',
+    password: '$2a$08$SMEo4KGaBUVPS6XluvJ1KeyLxWZ4zb9SigCUN2KlbJrkKYyKvmIme',
+    followers: [ '63dd1bc425a6e3b1cbdc8484', '63ddbc66c36ae2b574c29d0d' ],
+    followings: [ '63dd1bc425a6e3b1cbdc8484', '63ddbc66c36ae2b574c29d0d' ],
+    favoritePosts: [],
+    createdAt: 2023-02-03T13:38:08.848Z,
+    updatedAt: 2023-02-04T10:47:17.279Z,
+    __v: 0,
+    avatar: '1675507637011IMG-20221219-WA0093.jpg'
+  },
+  {
+    _id: new ObjectId("63dd1bc425a6e3b1cbdc8484"),
+    username: 'abcdef',
+    email: 'abcdef@gmail.com',
+    password: '$2a$08$pw85aOzRkmwJuZ3HyVFJIuIT3oqHwX6q6tAO67XKD2TSXBQJgNmLu',
+    followers: [ '63dd0e4025a6e3b1cbdc8430', '63ddbc66c36ae2b574c29d0d' ],
+    followings: [ '63dd0e4025a6e3b1cbdc8430', '63ddbc66c36ae2b574c29d0d' ],
+    favoritePosts: [ '63dd53cb98027859fceb65ed' ],
+    createdAt: 2023-02-03T14:35:48.118Z,
+    updatedAt: 2023-02-04T02:03:04.650Z,
+    __v: 0,
+    firstName: 'Pacific',
+    avatar: '1675470878164IMG-20221219-WA0043.jpg'
+  }
+]
+[44mOnline users: [49m [34m63dd1bc425a6e3b1cbdc8484,63ddbc66c36ae2b574c29d0d[39m
+[44mOnline users: [49m [34m63dd1bc425a6e3b1cbdc8484,63ddbc66c36ae2b574c29d0d[39m
+[44mOnline users: [49m [34m63dd1bc425a6e3b1cbdc8484,63ddbc66c36ae2b574c29d0d[39m
+[44mOnline users: [49m [34m63dd1bc425a6e3b1cbdc8484,63ddbc66c36ae2b574c29d0d[39m
