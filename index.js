@@ -7,12 +7,12 @@ const session = require('express-session');
 const MongoStore = require('connect-mongo')(session);
 const passport = require("passport");
 const cors = require('cors');
+const socketEventsHandler = require('./socket/socketEvents');
 require('./config/passport')(passport);
 
 // Configuting .env file
 require('dotenv').config();
 require('./config/db');
-
 
 // Initializing app
 const app = express();
@@ -24,6 +24,19 @@ app.use(session({
   maxAge: 24*60*60*100
 }))
 
+
+// Initializing socket.io server
+const server = require('http').Server(app);
+const io = require('socket.io')(server, {
+    cors: {
+        origin: '*'
+    }
+});
+
+// Handling socket events
+socketEventsHandler(io);
+
+// Utilising various middlewares
 app.use(passport.initialize());
 app.use(passport.session())
 app.use(express.json());
@@ -48,10 +61,13 @@ app.use("/auth", require('./routes/authRouter'));
 app.use("/user", require('./routes/userRouter'));
 app.use("/post", require('./routes/postRouter'));
 app.use("/story", require('./routes/storyRouter'));
+app.use("/chat", require('./routes/chatRouter'));
 
 
 // Listening on port
 const PORT = 8000;
-app.listen(PORT, () => {
+server.listen(PORT, () => {
+  console.log("Socket server up and running");
   console.log("Server up and running on port " + PORT);
 });
+

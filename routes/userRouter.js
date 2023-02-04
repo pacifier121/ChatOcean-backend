@@ -119,6 +119,7 @@ router.get('/posts/:userId', async(req, res) => {
 router.get('/timeline', async(req, res) => {
     try {
         const user = await User.findById(req.query.userId);
+        if (!user) throw new Error("No such user found!");
 
         let posts = await Post.find({ userId: req.query.userId });
         posts = posts.map(p => ({...p._doc, owner: user}));
