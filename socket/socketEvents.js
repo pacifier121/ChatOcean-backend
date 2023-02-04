@@ -109,13 +109,20 @@ const socketEventsHandler = (io) => {
                 })
                 const onlineFriends = await User.find({ _id: { $in : tempOnlineFriends } });
                 const offlineFriends = await User.find({ $and : [{ _id: { $in : user.followings } },{ _id: { $not: { $in : tempOnlineFriends } } }] });
-                console.log(onlineFriends);
-                console.log('----------')
-                console.log(offlineFriends);
                 const userSocketId = getSocketId(userId);
                 io.to(userSocketId).emit('updateFriends', { onlineFriends, offlineFriends });
             } catch (err) {
                 console.log(err);
+            }
+        })
+        
+        socket.on('sendNewMessage', (msg) => {
+            console.log(msg);
+            try {
+                const recieverSocketId = getSocketId(msg.recieverId);
+                if (recieverSocketId) io.to(recieverSocketId).emit('recieveNewMessage', msg);
+            } catch (err) {
+                console.log(err); 
             }
         })
     })
