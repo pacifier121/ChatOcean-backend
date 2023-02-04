@@ -97,10 +97,10 @@ const socketEventsHandler = (io) => {
             }
         })
         
-        socket.on('getOnlineFriends', async(userId) => {
+        socket.on('getFriends', async(userId) => {
             try {
                 const user = await User.findById(userId);
-                if (!user) throw new Error("SocketError: getOnlineFriends: No such user found");
+                if (!user) throw new Error("SocketError: getFriends: No such user found");
 
                 const tempOnlineFriends = [];
                 user.followings.forEach(f => {
@@ -108,10 +108,12 @@ const socketEventsHandler = (io) => {
                     if (socketId) tempOnlineFriends.push(f);
                 })
                 const onlineFriends = await User.find({ _id: { $in : tempOnlineFriends } });
-                const offlineFriends = await User.find({ $and : [{ _id: { $in : user.followings } },{ _id: { $in : user.followings } }] });
+                const offlineFriends = await User.find({ $and : [{ _id: { $in : user.followings } },{ _id: { $not: { $in : tempOnlineFriends } } }] });
+                console.log(onlineFriends);
+                console.log('----------')
                 console.log(offlineFriends);
                 const userSocketId = getSocketId(userId);
-                io.to(userSocketId).emit('updateOnlineFriends', onlineFriends);
+                io.to(userSocketId).emit('updateFriends', { onlineFriends, offlineFriends });
             } catch (err) {
                 console.log(err);
             }

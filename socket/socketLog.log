@@ -1,9 +1,7 @@
 [44mOnline users: [49m 
-User [31mdisconnected[39m : [34mEgCFqQxN7WZKmyU1AAAB[39m
-Error: SocketError: Disconnect: No such user found
-    at Socket.<anonymous> (/home/pacifire/Programs/Web/FullStack/chat-ocean/api/socket/socketEvents.js:79:34)
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
-User [32mconnected[39m : [34m9cnzoQjyFOfaHmS-AAAH[39m
+[44mOnline users: [49m 
+[]
+----------
 [
   {
     _id: new ObjectId("63dd0e4025a6e3b1cbdc8430"),
@@ -32,13 +30,8 @@ User [32mconnected[39m : [34m9cnzoQjyFOfaHmS-AAAH[39m
     avatar: '1675507689018stephen.jpeg'
   }
 ]
-User [31mdisconnected[39m : [34mckq7VTAakxXnsVwJAAAF[39m
-Error: SocketError: Disconnect: No such user found
-    at Socket.<anonymous> (/home/pacifire/Programs/Web/FullStack/chat-ocean/api/socket/socketEvents.js:79:34)
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
-[44mOnline users: [49m [34m63dd1bc425a6e3b1cbdc8484[39m
-User [32mconnected[39m : [34mTMf7DA5znRIsiojdAAAJ[39m
-9cnzoQjyFOfaHmS-AAAH  is online
+[]
+----------
 [
   {
     _id: new ObjectId("63dd0e4025a6e3b1cbdc8430"),
@@ -68,6 +61,1351 @@ User [32mconnected[39m : [34mTMf7DA5znRIsiojdAAAJ[39m
     avatar: '1675470878164IMG-20221219-WA0043.jpg'
   }
 ]
+User [31mdisconnected[39m : [34ml8IEhDfaLfM9iNoGAAAB[39m
+Error: SocketError: Disconnect: No such user found
+    at Socket.<anonymous> (/home/pacifire/Programs/Web/FullStack/chat-ocean/api/socket/socketEvents.js:79:34)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+User [32mconnected[39m : [34mW-Z6UYv-7cQIFWcwAAAF[39m
+[]
+----------
+[
+  {
+    _id: new ObjectId("63dd0e4025a6e3b1cbdc8430"),
+    username: 'pacifire',
+    email: 'prashantrawat2jangamer@gmail.com',
+    password: '$2a$08$SMEo4KGaBUVPS6XluvJ1KeyLxWZ4zb9SigCUN2KlbJrkKYyKvmIme',
+    followers: [ '63dd1bc425a6e3b1cbdc8484', '63ddbc66c36ae2b574c29d0d' ],
+    followings: [ '63dd1bc425a6e3b1cbdc8484', '63ddbc66c36ae2b574c29d0d' ],
+    favoritePosts: [],
+    createdAt: 2023-02-03T13:38:08.848Z,
+    updatedAt: 2023-02-04T10:47:17.279Z,
+    __v: 0,
+    avatar: '1675507637011IMG-20221219-WA0093.jpg'
+  },
+  {
+    _id: new ObjectId("63dd1bc425a6e3b1cbdc8484"),
+    username: 'abcdef',
+    email: 'abcdef@gmail.com',
+    password: '$2a$08$pw85aOzRkmwJuZ3HyVFJIuIT3oqHwX6q6tAO67XKD2TSXBQJgNmLu',
+    followers: [ '63dd0e4025a6e3b1cbdc8430', '63ddbc66c36ae2b574c29d0d' ],
+    followings: [ '63dd0e4025a6e3b1cbdc8430', '63ddbc66c36ae2b574c29d0d' ],
+    favoritePosts: [ '63dd53cb98027859fceb65ed' ],
+    createdAt: 2023-02-03T14:35:48.118Z,
+    updatedAt: 2023-02-04T02:03:04.650Z,
+    __v: 0,
+    firstName: 'Pacific',
+    avatar: '1675470878164IMG-20221219-WA0043.jpg'
+  }
+]
+User [31mdisconnected[39m : [34mFq0ue-091WI6UXAFAAAD[39m
+Error: SocketError: Disconnect: No such user found
+    at Socket.<anonymous> (/home/pacifire/Programs/Web/FullStack/chat-ocean/api/socket/socketEvents.js:79:34)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[44mOnline users: [49m [34m63ddbc66c36ae2b574c29d0d[39m
+User [32mconnected[39m : [34mYGj-XSGsruEnDBlfAAAH[39m
+W-Z6UYv-7cQIFWcwAAAF  is online
+[
+  {
+    _id: new ObjectId("63ddbc66c36ae2b574c29d0d"),
+    username: 'stephen',
+    email: 'g@g.com',
+    password: '$2a$08$92p/IiOfHGgvLAO9I7cj0.g7fzAbojYimdmezRqi5RaxhExoCcg26',
+    followers: [ '63dd0e4025a6e3b1cbdc8430', '63dd1bc425a6e3b1cbdc8484' ],
+    followings: [ '63dd1bc425a6e3b1cbdc8484', '63dd0e4025a6e3b1cbdc8430' ],
+    favoritePosts: [],
+    createdAt: 2023-02-04T02:01:10.619Z,
+    updatedAt: 2023-02-04T14:44:38.815Z,
+    __v: 0,
+    avatar: '1675507689018stephen.jpeg'
+  }
+]
+----------
+[
+  {
+    _id: new ObjectId("63dd0e4025a6e3b1cbdc8430"),
+    username: 'pacifire',
+    email: 'prashantrawat2jangamer@gmail.com',
+    password: '$2a$08$SMEo4KGaBUVPS6XluvJ1KeyLxWZ4zb9SigCUN2KlbJrkKYyKvmIme',
+    followers: [ '63dd1bc425a6e3b1cbdc8484', '63ddbc66c36ae2b574c29d0d' ],
+    followings: [ '63dd1bc425a6e3b1cbdc8484', '63ddbc66c36ae2b574c29d0d' ],
+    favoritePosts: [],
+    createdAt: 2023-02-03T13:38:08.848Z,
+    updatedAt: 2023-02-04T10:47:17.279Z,
+    __v: 0,
+    avatar: '1675507637011IMG-20221219-WA0093.jpg'
+  }
+]
+[44mOnline users: [49m [34m63ddbc66c36ae2b574c29d0d,63dd1bc425a6e3b1cbdc8484[39m
+[44mOnline users: [49m [34m63ddbc66c36ae2b574c29d0d,63dd1bc425a6e3b1cbdc8484[39m
+[44mOnline users: [49m [34m63ddbc66c36ae2b574c29d0d,63dd1bc425a6e3b1cbdc8484[39m
+[44mOnline users: [49m [34m63ddbc66c36ae2b574c29d0d,63dd1bc425a6e3b1cbdc8484[39m
+[44mOnline users: [49m [34m63ddbc66c36ae2b574c29d0d,63dd1bc425a6e3b1cbdc8484[39m
+[44mOnline users: [49m [34m63ddbc66c36ae2b574c29d0d,63dd1bc425a6e3b1cbdc8484[39m
+[44mOnline users: [49m [34m63ddbc66c36ae2b574c29d0d,63dd1bc425a6e3b1cbdc8484[39m
+[44mOnline users: [49m [34m63ddbc66c36ae2b574c29d0d,63dd1bc425a6e3b1cbdc8484[39m
+[44mOnline users: [49m [34m63ddbc66c36ae2b574c29d0d,63dd1bc425a6e3b1cbdc8484[39m
+[44mOnline users: [49m [34m63ddbc66c36ae2b574c29d0d,63dd1bc425a6e3b1cbdc8484[39m
+[44mOnline users: [49m [34m63ddbc66c36ae2b574c29d0d,63dd1bc425a6e3b1cbdc8484[39m
+[44mOnline users: [49m [34m63ddbc66c36ae2b574c29d0d,63dd1bc425a6e3b1cbdc8484[39m
+[44mOnline users: [49m [34m63ddbc66c36ae2b574c29d0d,63dd1bc425a6e3b1cbdc8484[39m
+[44mOnline users: [49m [34m63ddbc66c36ae2b574c29d0d,63dd1bc425a6e3b1cbdc8484[39m
+[44mOnline users: [49m [34m63ddbc66c36ae2b574c29d0d,63dd1bc425a6e3b1cbdc8484[39m
+[44mOnline users: [49m [34m63ddbc66c36ae2b574c29d0d,63dd1bc425a6e3b1cbdc8484[39m
+User [31mdisconnected[39m : [34mYGj-XSGsruEnDBlfAAAH[39m
+User [31mdisconnected[39m : [34mW-Z6UYv-7cQIFWcwAAAF[39m
+[
+  {
+    _id: new ObjectId("63ddbc66c36ae2b574c29d0d"),
+    username: 'stephen',
+    email: 'g@g.com',
+    password: '$2a$08$92p/IiOfHGgvLAO9I7cj0.g7fzAbojYimdmezRqi5RaxhExoCcg26',
+    followers: [ '63dd0e4025a6e3b1cbdc8430', '63dd1bc425a6e3b1cbdc8484' ],
+    followings: [ '63dd1bc425a6e3b1cbdc8484', '63dd0e4025a6e3b1cbdc8430' ],
+    favoritePosts: [],
+    createdAt: 2023-02-04T02:01:10.619Z,
+    updatedAt: 2023-02-04T14:44:38.815Z,
+    __v: 0,
+    avatar: '1675507689018stephen.jpeg'
+  }
+]
+----------
+[
+  {
+    _id: new ObjectId("63dd0e4025a6e3b1cbdc8430"),
+    username: 'pacifire',
+    email: 'prashantrawat2jangamer@gmail.com',
+    password: '$2a$08$SMEo4KGaBUVPS6XluvJ1KeyLxWZ4zb9SigCUN2KlbJrkKYyKvmIme',
+    followers: [ '63dd1bc425a6e3b1cbdc8484', '63ddbc66c36ae2b574c29d0d' ],
+    followings: [ '63dd1bc425a6e3b1cbdc8484', '63ddbc66c36ae2b574c29d0d' ],
+    favoritePosts: [],
+    createdAt: 2023-02-03T13:38:08.848Z,
+    updatedAt: 2023-02-04T10:47:17.279Z,
+    __v: 0,
+    avatar: '1675507637011IMG-20221219-WA0093.jpg'
+  }
+]
+Error: SocketError: Disconnect: No such user found
+    at Socket.<anonymous> (/home/pacifire/Programs/Web/FullStack/chat-ocean/api/socket/socketEvents.js:79:34)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[
+  {
+    _id: new ObjectId("63dd1bc425a6e3b1cbdc8484"),
+    username: 'abcdef',
+    email: 'abcdef@gmail.com',
+    password: '$2a$08$pw85aOzRkmwJuZ3HyVFJIuIT3oqHwX6q6tAO67XKD2TSXBQJgNmLu',
+    followers: [ '63dd0e4025a6e3b1cbdc8430', '63ddbc66c36ae2b574c29d0d' ],
+    followings: [ '63dd0e4025a6e3b1cbdc8430', '63ddbc66c36ae2b574c29d0d' ],
+    favoritePosts: [ '63dd53cb98027859fceb65ed' ],
+    createdAt: 2023-02-03T14:35:48.118Z,
+    updatedAt: 2023-02-04T02:03:04.650Z,
+    __v: 0,
+    firstName: 'Pacific',
+    avatar: '1675470878164IMG-20221219-WA0043.jpg'
+  }
+]
+----------
+[
+  {
+    _id: new ObjectId("63dd0e4025a6e3b1cbdc8430"),
+    username: 'pacifire',
+    email: 'prashantrawat2jangamer@gmail.com',
+    password: '$2a$08$SMEo4KGaBUVPS6XluvJ1KeyLxWZ4zb9SigCUN2KlbJrkKYyKvmIme',
+    followers: [ '63dd1bc425a6e3b1cbdc8484', '63ddbc66c36ae2b574c29d0d' ],
+    followings: [ '63dd1bc425a6e3b1cbdc8484', '63ddbc66c36ae2b574c29d0d' ],
+    favoritePosts: [],
+    createdAt: 2023-02-03T13:38:08.848Z,
+    updatedAt: 2023-02-04T10:47:17.279Z,
+    __v: 0,
+    avatar: '1675507637011IMG-20221219-WA0093.jpg'
+  }
+]
+[]
+----------
+[
+  {
+    _id: new ObjectId("63dd0e4025a6e3b1cbdc8430"),
+    username: 'pacifire',
+    email: 'prashantrawat2jangamer@gmail.com',
+    password: '$2a$08$SMEo4KGaBUVPS6XluvJ1KeyLxWZ4zb9SigCUN2KlbJrkKYyKvmIme',
+    followers: [ '63dd1bc425a6e3b1cbdc8484', '63ddbc66c36ae2b574c29d0d' ],
+    followings: [ '63dd1bc425a6e3b1cbdc8484', '63ddbc66c36ae2b574c29d0d' ],
+    favoritePosts: [],
+    createdAt: 2023-02-03T13:38:08.848Z,
+    updatedAt: 2023-02-04T10:47:17.279Z,
+    __v: 0,
+    avatar: '1675507637011IMG-20221219-WA0093.jpg'
+  },
+  {
+    _id: new ObjectId("63ddbc66c36ae2b574c29d0d"),
+    username: 'stephen',
+    email: 'g@g.com',
+    password: '$2a$08$92p/IiOfHGgvLAO9I7cj0.g7fzAbojYimdmezRqi5RaxhExoCcg26',
+    followers: [ '63dd0e4025a6e3b1cbdc8430', '63dd1bc425a6e3b1cbdc8484' ],
+    followings: [ '63dd1bc425a6e3b1cbdc8484', '63dd0e4025a6e3b1cbdc8430' ],
+    favoritePosts: [],
+    createdAt: 2023-02-04T02:01:10.619Z,
+    updatedAt: 2023-02-04T14:44:38.815Z,
+    __v: 0,
+    avatar: '1675507689018stephen.jpeg'
+  }
+]
+User [32mconnected[39m : [34mjJnG_Yg8VCE_zEM6AAAL[39m
+User [32mconnected[39m : [34m-KEGLA7jVd-mPUiXAAAJ[39m
+[]
+----------
+[
+  {
+    _id: new ObjectId("63dd0e4025a6e3b1cbdc8430"),
+    username: 'pacifire',
+    email: 'prashantrawat2jangamer@gmail.com',
+    password: '$2a$08$SMEo4KGaBUVPS6XluvJ1KeyLxWZ4zb9SigCUN2KlbJrkKYyKvmIme',
+    followers: [ '63dd1bc425a6e3b1cbdc8484', '63ddbc66c36ae2b574c29d0d' ],
+    followings: [ '63dd1bc425a6e3b1cbdc8484', '63ddbc66c36ae2b574c29d0d' ],
+    favoritePosts: [],
+    createdAt: 2023-02-03T13:38:08.848Z,
+    updatedAt: 2023-02-04T10:47:17.279Z,
+    __v: 0,
+    avatar: '1675507637011IMG-20221219-WA0093.jpg'
+  },
+  {
+    _id: new ObjectId("63dd1bc425a6e3b1cbdc8484"),
+    username: 'abcdef',
+    email: 'abcdef@gmail.com',
+    password: '$2a$08$pw85aOzRkmwJuZ3HyVFJIuIT3oqHwX6q6tAO67XKD2TSXBQJgNmLu',
+    followers: [ '63dd0e4025a6e3b1cbdc8430', '63ddbc66c36ae2b574c29d0d' ],
+    followings: [ '63dd0e4025a6e3b1cbdc8430', '63ddbc66c36ae2b574c29d0d' ],
+    favoritePosts: [ '63dd53cb98027859fceb65ed' ],
+    createdAt: 2023-02-03T14:35:48.118Z,
+    updatedAt: 2023-02-04T02:03:04.650Z,
+    __v: 0,
+    firstName: 'Pacific',
+    avatar: '1675470878164IMG-20221219-WA0043.jpg'
+  }
+]
+jJnG_Yg8VCE_zEM6AAAL  is online
+Error: SocketError: Disconnect: No such user found
+    at Socket.<anonymous> (/home/pacifire/Programs/Web/FullStack/chat-ocean/api/socket/socketEvents.js:79:34)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at runNextTicks (node:internal/process/task_queues:65:3)
+    at processImmediate (node:internal/timers:437:9)
+[
+  {
+    _id: new ObjectId("63dd1bc425a6e3b1cbdc8484"),
+    username: 'abcdef',
+    email: 'abcdef@gmail.com',
+    password: '$2a$08$pw85aOzRkmwJuZ3HyVFJIuIT3oqHwX6q6tAO67XKD2TSXBQJgNmLu',
+    followers: [ '63dd0e4025a6e3b1cbdc8430', '63ddbc66c36ae2b574c29d0d' ],
+    followings: [ '63dd0e4025a6e3b1cbdc8430', '63ddbc66c36ae2b574c29d0d' ],
+    favoritePosts: [ '63dd53cb98027859fceb65ed' ],
+    createdAt: 2023-02-03T14:35:48.118Z,
+    updatedAt: 2023-02-04T02:03:04.650Z,
+    __v: 0,
+    firstName: 'Pacific',
+    avatar: '1675470878164IMG-20221219-WA0043.jpg'
+  }
+]
+----------
+[
+  {
+    _id: new ObjectId("63dd0e4025a6e3b1cbdc8430"),
+    username: 'pacifire',
+    email: 'prashantrawat2jangamer@gmail.com',
+    password: '$2a$08$SMEo4KGaBUVPS6XluvJ1KeyLxWZ4zb9SigCUN2KlbJrkKYyKvmIme',
+    followers: [ '63dd1bc425a6e3b1cbdc8484', '63ddbc66c36ae2b574c29d0d' ],
+    followings: [ '63dd1bc425a6e3b1cbdc8484', '63ddbc66c36ae2b574c29d0d' ],
+    favoritePosts: [],
+    createdAt: 2023-02-03T13:38:08.848Z,
+    updatedAt: 2023-02-04T10:47:17.279Z,
+    __v: 0,
+    avatar: '1675507637011IMG-20221219-WA0093.jpg'
+  }
+]
+[
+  {
+    _id: new ObjectId("63ddbc66c36ae2b574c29d0d"),
+    username: 'stephen',
+    email: 'g@g.com',
+    password: '$2a$08$92p/IiOfHGgvLAO9I7cj0.g7fzAbojYimdmezRqi5RaxhExoCcg26',
+    followers: [ '63dd0e4025a6e3b1cbdc8430', '63dd1bc425a6e3b1cbdc8484' ],
+    followings: [ '63dd1bc425a6e3b1cbdc8484', '63dd0e4025a6e3b1cbdc8430' ],
+    favoritePosts: [],
+    createdAt: 2023-02-04T02:01:10.619Z,
+    updatedAt: 2023-02-04T14:44:38.815Z,
+    __v: 0,
+    avatar: '1675507689018stephen.jpeg'
+  }
+]
+----------
+[
+  {
+    _id: new ObjectId("63dd0e4025a6e3b1cbdc8430"),
+    username: 'pacifire',
+    email: 'prashantrawat2jangamer@gmail.com',
+    password: '$2a$08$SMEo4KGaBUVPS6XluvJ1KeyLxWZ4zb9SigCUN2KlbJrkKYyKvmIme',
+    followers: [ '63dd1bc425a6e3b1cbdc8484', '63ddbc66c36ae2b574c29d0d' ],
+    followings: [ '63dd1bc425a6e3b1cbdc8484', '63ddbc66c36ae2b574c29d0d' ],
+    favoritePosts: [],
+    createdAt: 2023-02-03T13:38:08.848Z,
+    updatedAt: 2023-02-04T10:47:17.279Z,
+    __v: 0,
+    avatar: '1675507637011IMG-20221219-WA0093.jpg'
+  }
+]
+[44mOnline users: [49m [34m63ddbc66c36ae2b574c29d0d,63dd1bc425a6e3b1cbdc8484[39m
+[44mOnline users: [49m [34m63ddbc66c36ae2b574c29d0d,63dd1bc425a6e3b1cbdc8484[39m
+[44mOnline users: [49m [34m63ddbc66c36ae2b574c29d0d,63dd1bc425a6e3b1cbdc8484[39m
+[44mOnline users: [49m [34m63ddbc66c36ae2b574c29d0d,63dd1bc425a6e3b1cbdc8484[39m
+User [31mdisconnected[39m : [34m-KEGLA7jVd-mPUiXAAAJ[39m
+Error: SocketError: Disconnect: No such user found
+    at Socket.<anonymous> (/home/pacifire/Programs/Web/FullStack/chat-ocean/api/socket/socketEvents.js:79:34)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+User [32mconnected[39m : [34mFmAbO6YdO689VSpPAAAN[39m
+jJnG_Yg8VCE_zEM6AAAL  is online
+[
+  {
+    _id: new ObjectId("63ddbc66c36ae2b574c29d0d"),
+    username: 'stephen',
+    email: 'g@g.com',
+    password: '$2a$08$92p/IiOfHGgvLAO9I7cj0.g7fzAbojYimdmezRqi5RaxhExoCcg26',
+    followers: [ '63dd0e4025a6e3b1cbdc8430', '63dd1bc425a6e3b1cbdc8484' ],
+    followings: [ '63dd1bc425a6e3b1cbdc8484', '63dd0e4025a6e3b1cbdc8430' ],
+    favoritePosts: [],
+    createdAt: 2023-02-04T02:01:10.619Z,
+    updatedAt: 2023-02-04T14:44:38.815Z,
+    __v: 0,
+    avatar: '1675507689018stephen.jpeg'
+  }
+]
+----------
+[
+  {
+    _id: new ObjectId("63dd0e4025a6e3b1cbdc8430"),
+    username: 'pacifire',
+    email: 'prashantrawat2jangamer@gmail.com',
+    password: '$2a$08$SMEo4KGaBUVPS6XluvJ1KeyLxWZ4zb9SigCUN2KlbJrkKYyKvmIme',
+    followers: [ '63dd1bc425a6e3b1cbdc8484', '63ddbc66c36ae2b574c29d0d' ],
+    followings: [ '63dd1bc425a6e3b1cbdc8484', '63ddbc66c36ae2b574c29d0d' ],
+    favoritePosts: [],
+    createdAt: 2023-02-03T13:38:08.848Z,
+    updatedAt: 2023-02-04T10:47:17.279Z,
+    __v: 0,
+    avatar: '1675507637011IMG-20221219-WA0093.jpg'
+  }
+]
+User [31mdisconnected[39m : [34mjJnG_Yg8VCE_zEM6AAAL[39m
+Error: SocketError: Disconnect: No such user found
+    at Socket.<anonymous> (/home/pacifire/Programs/Web/FullStack/chat-ocean/api/socket/socketEvents.js:79:34)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+User [32mconnected[39m : [34mfqb3I53QPu1pGCeHAAAP[39m
+FmAbO6YdO689VSpPAAAN  is online
+[44mOnline users: [49m [34m63dd1bc425a6e3b1cbdc8484,63ddbc66c36ae2b574c29d0d[39m
+[
+  {
+    _id: new ObjectId("63dd1bc425a6e3b1cbdc8484"),
+    username: 'abcdef',
+    email: 'abcdef@gmail.com',
+    password: '$2a$08$pw85aOzRkmwJuZ3HyVFJIuIT3oqHwX6q6tAO67XKD2TSXBQJgNmLu',
+    followers: [ '63dd0e4025a6e3b1cbdc8430', '63ddbc66c36ae2b574c29d0d' ],
+    followings: [ '63dd0e4025a6e3b1cbdc8430', '63ddbc66c36ae2b574c29d0d' ],
+    favoritePosts: [ '63dd53cb98027859fceb65ed' ],
+    createdAt: 2023-02-03T14:35:48.118Z,
+    updatedAt: 2023-02-04T02:03:04.650Z,
+    __v: 0,
+    firstName: 'Pacific',
+    avatar: '1675470878164IMG-20221219-WA0043.jpg'
+  }
+]
+----------
+[
+  {
+    _id: new ObjectId("63dd0e4025a6e3b1cbdc8430"),
+    username: 'pacifire',
+    email: 'prashantrawat2jangamer@gmail.com',
+    password: '$2a$08$SMEo4KGaBUVPS6XluvJ1KeyLxWZ4zb9SigCUN2KlbJrkKYyKvmIme',
+    followers: [ '63dd1bc425a6e3b1cbdc8484', '63ddbc66c36ae2b574c29d0d' ],
+    followings: [ '63dd1bc425a6e3b1cbdc8484', '63ddbc66c36ae2b574c29d0d' ],
+    favoritePosts: [],
+    createdAt: 2023-02-03T13:38:08.848Z,
+    updatedAt: 2023-02-04T10:47:17.279Z,
+    __v: 0,
+    avatar: '1675507637011IMG-20221219-WA0093.jpg'
+  }
+]
+[44mOnline users: [49m [34m63dd1bc425a6e3b1cbdc8484,63ddbc66c36ae2b574c29d0d[39m
+[44mOnline users: [49m [34m63dd1bc425a6e3b1cbdc8484,63ddbc66c36ae2b574c29d0d[39m
+[44mOnline users: [49m [34m63dd1bc425a6e3b1cbdc8484,63ddbc66c36ae2b574c29d0d[39m
+[44mOnline users: [49m [34m63dd1bc425a6e3b1cbdc8484,63ddbc66c36ae2b574c29d0d[39m
+[44mOnline users: [49m [34m63dd1bc425a6e3b1cbdc8484,63ddbc66c36ae2b574c29d0d[39m
+User [31mdisconnected[39m : [34mFmAbO6YdO689VSpPAAAN[39m
+User [31mdisconnected[39m : [34mfqb3I53QPu1pGCeHAAAP[39m
+Error: SocketError: Disconnect: No such user found
+    at Socket.<anonymous> (/home/pacifire/Programs/Web/FullStack/chat-ocean/api/socket/socketEvents.js:79:34)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+Error: SocketError: Disconnect: No such user found
+    at Socket.<anonymous> (/home/pacifire/Programs/Web/FullStack/chat-ocean/api/socket/socketEvents.js:79:34)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+User [32mconnected[39m : [34mIzG8uJNuTJ2-NP1_AAAT[39m
+User [32mconnected[39m : [34mNt2QY9XXiNOP1Mf6AAAR[39m
+[]
+----------
+[
+  {
+    _id: new ObjectId("63dd0e4025a6e3b1cbdc8430"),
+    username: 'pacifire',
+    email: 'prashantrawat2jangamer@gmail.com',
+    password: '$2a$08$SMEo4KGaBUVPS6XluvJ1KeyLxWZ4zb9SigCUN2KlbJrkKYyKvmIme',
+    followers: [ '63dd1bc425a6e3b1cbdc8484', '63ddbc66c36ae2b574c29d0d' ],
+    followings: [ '63dd1bc425a6e3b1cbdc8484', '63ddbc66c36ae2b574c29d0d' ],
+    favoritePosts: [],
+    createdAt: 2023-02-03T13:38:08.848Z,
+    updatedAt: 2023-02-04T10:47:17.279Z,
+    __v: 0,
+    avatar: '1675507637011IMG-20221219-WA0093.jpg'
+  },
+  {
+    _id: new ObjectId("63dd1bc425a6e3b1cbdc8484"),
+    username: 'abcdef',
+    email: 'abcdef@gmail.com',
+    password: '$2a$08$pw85aOzRkmwJuZ3HyVFJIuIT3oqHwX6q6tAO67XKD2TSXBQJgNmLu',
+    followers: [ '63dd0e4025a6e3b1cbdc8430', '63ddbc66c36ae2b574c29d0d' ],
+    followings: [ '63dd0e4025a6e3b1cbdc8430', '63ddbc66c36ae2b574c29d0d' ],
+    favoritePosts: [ '63dd53cb98027859fceb65ed' ],
+    createdAt: 2023-02-03T14:35:48.118Z,
+    updatedAt: 2023-02-04T02:03:04.650Z,
+    __v: 0,
+    firstName: 'Pacific',
+    avatar: '1675470878164IMG-20221219-WA0043.jpg'
+  }
+]
+IzG8uJNuTJ2-NP1_AAAT  is online
+[
+  {
+    _id: new ObjectId("63ddbc66c36ae2b574c29d0d"),
+    username: 'stephen',
+    email: 'g@g.com',
+    password: '$2a$08$92p/IiOfHGgvLAO9I7cj0.g7fzAbojYimdmezRqi5RaxhExoCcg26',
+    followers: [ '63dd0e4025a6e3b1cbdc8430', '63dd1bc425a6e3b1cbdc8484' ],
+    followings: [ '63dd1bc425a6e3b1cbdc8484', '63dd0e4025a6e3b1cbdc8430' ],
+    favoritePosts: [],
+    createdAt: 2023-02-04T02:01:10.619Z,
+    updatedAt: 2023-02-04T14:44:38.815Z,
+    __v: 0,
+    avatar: '1675507689018stephen.jpeg'
+  }
+]
+----------
+[
+  {
+    _id: new ObjectId("63dd0e4025a6e3b1cbdc8430"),
+    username: 'pacifire',
+    email: 'prashantrawat2jangamer@gmail.com',
+    password: '$2a$08$SMEo4KGaBUVPS6XluvJ1KeyLxWZ4zb9SigCUN2KlbJrkKYyKvmIme',
+    followers: [ '63dd1bc425a6e3b1cbdc8484', '63ddbc66c36ae2b574c29d0d' ],
+    followings: [ '63dd1bc425a6e3b1cbdc8484', '63ddbc66c36ae2b574c29d0d' ],
+    favoritePosts: [],
+    createdAt: 2023-02-03T13:38:08.848Z,
+    updatedAt: 2023-02-04T10:47:17.279Z,
+    __v: 0,
+    avatar: '1675507637011IMG-20221219-WA0093.jpg'
+  }
+]
+[44mOnline users: [49m [34m63ddbc66c36ae2b574c29d0d,63dd1bc425a6e3b1cbdc8484[39m
+User [31mdisconnected[39m : [34mNt2QY9XXiNOP1Mf6AAAR[39m
+Error: SocketError: Disconnect: No such user found
+    at Socket.<anonymous> (/home/pacifire/Programs/Web/FullStack/chat-ocean/api/socket/socketEvents.js:79:34)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+User [32mconnected[39m : [34mISokQznmoTeV7OBdAAAV[39m
+IzG8uJNuTJ2-NP1_AAAT  is online
+[
+  {
+    _id: new ObjectId("63ddbc66c36ae2b574c29d0d"),
+    username: 'stephen',
+    email: 'g@g.com',
+    password: '$2a$08$92p/IiOfHGgvLAO9I7cj0.g7fzAbojYimdmezRqi5RaxhExoCcg26',
+    followers: [ '63dd0e4025a6e3b1cbdc8430', '63dd1bc425a6e3b1cbdc8484' ],
+    followings: [ '63dd1bc425a6e3b1cbdc8484', '63dd0e4025a6e3b1cbdc8430' ],
+    favoritePosts: [],
+    createdAt: 2023-02-04T02:01:10.619Z,
+    updatedAt: 2023-02-04T14:44:38.815Z,
+    __v: 0,
+    avatar: '1675507689018stephen.jpeg'
+  }
+]
+----------
+[
+  {
+    _id: new ObjectId("63dd0e4025a6e3b1cbdc8430"),
+    username: 'pacifire',
+    email: 'prashantrawat2jangamer@gmail.com',
+    password: '$2a$08$SMEo4KGaBUVPS6XluvJ1KeyLxWZ4zb9SigCUN2KlbJrkKYyKvmIme',
+    followers: [ '63dd1bc425a6e3b1cbdc8484', '63ddbc66c36ae2b574c29d0d' ],
+    followings: [ '63dd1bc425a6e3b1cbdc8484', '63ddbc66c36ae2b574c29d0d' ],
+    favoritePosts: [],
+    createdAt: 2023-02-03T13:38:08.848Z,
+    updatedAt: 2023-02-04T10:47:17.279Z,
+    __v: 0,
+    avatar: '1675507637011IMG-20221219-WA0093.jpg'
+  }
+]
+User [31mdisconnected[39m : [34mIzG8uJNuTJ2-NP1_AAAT[39m
+Error: SocketError: Disconnect: No such user found
+    at Socket.<anonymous> (/home/pacifire/Programs/Web/FullStack/chat-ocean/api/socket/socketEvents.js:79:34)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+User [32mconnected[39m : [34meZdJwyzW9sMb2UnbAAAX[39m
+ISokQznmoTeV7OBdAAAV  is online
+[
+  {
+    _id: new ObjectId("63dd1bc425a6e3b1cbdc8484"),
+    username: 'abcdef',
+    email: 'abcdef@gmail.com',
+    password: '$2a$08$pw85aOzRkmwJuZ3HyVFJIuIT3oqHwX6q6tAO67XKD2TSXBQJgNmLu',
+    followers: [ '63dd0e4025a6e3b1cbdc8430', '63ddbc66c36ae2b574c29d0d' ],
+    followings: [ '63dd0e4025a6e3b1cbdc8430', '63ddbc66c36ae2b574c29d0d' ],
+    favoritePosts: [ '63dd53cb98027859fceb65ed' ],
+    createdAt: 2023-02-03T14:35:48.118Z,
+    updatedAt: 2023-02-04T02:03:04.650Z,
+    __v: 0,
+    firstName: 'Pacific',
+    avatar: '1675470878164IMG-20221219-WA0043.jpg'
+  }
+]
+----------
+[
+  {
+    _id: new ObjectId("63dd0e4025a6e3b1cbdc8430"),
+    username: 'pacifire',
+    email: 'prashantrawat2jangamer@gmail.com',
+    password: '$2a$08$SMEo4KGaBUVPS6XluvJ1KeyLxWZ4zb9SigCUN2KlbJrkKYyKvmIme',
+    followers: [ '63dd1bc425a6e3b1cbdc8484', '63ddbc66c36ae2b574c29d0d' ],
+    followings: [ '63dd1bc425a6e3b1cbdc8484', '63ddbc66c36ae2b574c29d0d' ],
+    favoritePosts: [],
+    createdAt: 2023-02-03T13:38:08.848Z,
+    updatedAt: 2023-02-04T10:47:17.279Z,
+    __v: 0,
+    avatar: '1675507637011IMG-20221219-WA0093.jpg'
+  }
+]
+[44mOnline users: [49m [34m63dd1bc425a6e3b1cbdc8484,63ddbc66c36ae2b574c29d0d[39m
+[44mOnline users: [49m [34m63dd1bc425a6e3b1cbdc8484,63ddbc66c36ae2b574c29d0d[39m
+[44mOnline users: [49m [34m63dd1bc425a6e3b1cbdc8484,63ddbc66c36ae2b574c29d0d[39m
+[44mOnline users: [49m [34m63dd1bc425a6e3b1cbdc8484,63ddbc66c36ae2b574c29d0d[39m
+[44mOnline users: [49m [34m63dd1bc425a6e3b1cbdc8484,63ddbc66c36ae2b574c29d0d[39m
+[44mOnline users: [49m [34m63dd1bc425a6e3b1cbdc8484,63ddbc66c36ae2b574c29d0d[39m
+[44mOnline users: [49m [34m63dd1bc425a6e3b1cbdc8484,63ddbc66c36ae2b574c29d0d[39m
+[44mOnline users: [49m [34m63dd1bc425a6e3b1cbdc8484,63ddbc66c36ae2b574c29d0d[39m
+[44mOnline users: [49m [34m63dd1bc425a6e3b1cbdc8484,63ddbc66c36ae2b574c29d0d[39m
+[44mOnline users: [49m [34m63dd1bc425a6e3b1cbdc8484,63ddbc66c36ae2b574c29d0d[39m
+[44mOnline users: [49m [34m63dd1bc425a6e3b1cbdc8484,63ddbc66c36ae2b574c29d0d[39m
+[44mOnline users: [49m [34m63dd1bc425a6e3b1cbdc8484,63ddbc66c36ae2b574c29d0d[39m
+[44mOnline users: [49m [34m63dd1bc425a6e3b1cbdc8484,63ddbc66c36ae2b574c29d0d[39m
+[
+  {
+    _id: new ObjectId("63ddbc66c36ae2b574c29d0d"),
+    username: 'stephen',
+    email: 'g@g.com',
+    password: '$2a$08$92p/IiOfHGgvLAO9I7cj0.g7fzAbojYimdmezRqi5RaxhExoCcg26',
+    followers: [ '63dd0e4025a6e3b1cbdc8430', '63dd1bc425a6e3b1cbdc8484' ],
+    followings: [ '63dd1bc425a6e3b1cbdc8484', '63dd0e4025a6e3b1cbdc8430' ],
+    favoritePosts: [],
+    createdAt: 2023-02-04T02:01:10.619Z,
+    updatedAt: 2023-02-04T14:44:38.815Z,
+    __v: 0,
+    avatar: '1675507689018stephen.jpeg'
+  }
+]
+----------
+[
+  {
+    _id: new ObjectId("63dd0e4025a6e3b1cbdc8430"),
+    username: 'pacifire',
+    email: 'prashantrawat2jangamer@gmail.com',
+    password: '$2a$08$SMEo4KGaBUVPS6XluvJ1KeyLxWZ4zb9SigCUN2KlbJrkKYyKvmIme',
+    followers: [ '63dd1bc425a6e3b1cbdc8484', '63ddbc66c36ae2b574c29d0d' ],
+    followings: [ '63dd1bc425a6e3b1cbdc8484', '63ddbc66c36ae2b574c29d0d' ],
+    favoritePosts: [],
+    createdAt: 2023-02-03T13:38:08.848Z,
+    updatedAt: 2023-02-04T10:47:17.279Z,
+    __v: 0,
+    avatar: '1675507637011IMG-20221219-WA0093.jpg'
+  }
+]
+[
+  {
+    _id: new ObjectId("63dd1bc425a6e3b1cbdc8484"),
+    username: 'abcdef',
+    email: 'abcdef@gmail.com',
+    password: '$2a$08$pw85aOzRkmwJuZ3HyVFJIuIT3oqHwX6q6tAO67XKD2TSXBQJgNmLu',
+    followers: [ '63dd0e4025a6e3b1cbdc8430', '63ddbc66c36ae2b574c29d0d' ],
+    followings: [ '63dd0e4025a6e3b1cbdc8430', '63ddbc66c36ae2b574c29d0d' ],
+    favoritePosts: [ '63dd53cb98027859fceb65ed' ],
+    createdAt: 2023-02-03T14:35:48.118Z,
+    updatedAt: 2023-02-04T02:03:04.650Z,
+    __v: 0,
+    firstName: 'Pacific',
+    avatar: '1675470878164IMG-20221219-WA0043.jpg'
+  }
+]
+----------
+[
+  {
+    _id: new ObjectId("63dd0e4025a6e3b1cbdc8430"),
+    username: 'pacifire',
+    email: 'prashantrawat2jangamer@gmail.com',
+    password: '$2a$08$SMEo4KGaBUVPS6XluvJ1KeyLxWZ4zb9SigCUN2KlbJrkKYyKvmIme',
+    followers: [ '63dd1bc425a6e3b1cbdc8484', '63ddbc66c36ae2b574c29d0d' ],
+    followings: [ '63dd1bc425a6e3b1cbdc8484', '63ddbc66c36ae2b574c29d0d' ],
+    favoritePosts: [],
+    createdAt: 2023-02-03T13:38:08.848Z,
+    updatedAt: 2023-02-04T10:47:17.279Z,
+    __v: 0,
+    avatar: '1675507637011IMG-20221219-WA0093.jpg'
+  }
+]
+[44mOnline users: [49m [34m63dd1bc425a6e3b1cbdc8484,63ddbc66c36ae2b574c29d0d[39m
+[44mOnline users: [49m [34m63dd1bc425a6e3b1cbdc8484,63ddbc66c36ae2b574c29d0d[39m
+[
+  {
+    _id: new ObjectId("63ddbc66c36ae2b574c29d0d"),
+    username: 'stephen',
+    email: 'g@g.com',
+    password: '$2a$08$92p/IiOfHGgvLAO9I7cj0.g7fzAbojYimdmezRqi5RaxhExoCcg26',
+    followers: [ '63dd0e4025a6e3b1cbdc8430', '63dd1bc425a6e3b1cbdc8484' ],
+    followings: [ '63dd1bc425a6e3b1cbdc8484', '63dd0e4025a6e3b1cbdc8430' ],
+    favoritePosts: [],
+    createdAt: 2023-02-04T02:01:10.619Z,
+    updatedAt: 2023-02-04T14:44:38.815Z,
+    __v: 0,
+    avatar: '1675507689018stephen.jpeg'
+  }
+]
+----------
+[
+  {
+    _id: new ObjectId("63dd0e4025a6e3b1cbdc8430"),
+    username: 'pacifire',
+    email: 'prashantrawat2jangamer@gmail.com',
+    password: '$2a$08$SMEo4KGaBUVPS6XluvJ1KeyLxWZ4zb9SigCUN2KlbJrkKYyKvmIme',
+    followers: [ '63dd1bc425a6e3b1cbdc8484', '63ddbc66c36ae2b574c29d0d' ],
+    followings: [ '63dd1bc425a6e3b1cbdc8484', '63ddbc66c36ae2b574c29d0d' ],
+    favoritePosts: [],
+    createdAt: 2023-02-03T13:38:08.848Z,
+    updatedAt: 2023-02-04T10:47:17.279Z,
+    __v: 0,
+    avatar: '1675507637011IMG-20221219-WA0093.jpg'
+  }
+]
+[
+  {
+    _id: new ObjectId("63dd1bc425a6e3b1cbdc8484"),
+    username: 'abcdef',
+    email: 'abcdef@gmail.com',
+    password: '$2a$08$pw85aOzRkmwJuZ3HyVFJIuIT3oqHwX6q6tAO67XKD2TSXBQJgNmLu',
+    followers: [ '63dd0e4025a6e3b1cbdc8430', '63ddbc66c36ae2b574c29d0d' ],
+    followings: [ '63dd0e4025a6e3b1cbdc8430', '63ddbc66c36ae2b574c29d0d' ],
+    favoritePosts: [ '63dd53cb98027859fceb65ed' ],
+    createdAt: 2023-02-03T14:35:48.118Z,
+    updatedAt: 2023-02-04T02:03:04.650Z,
+    __v: 0,
+    firstName: 'Pacific',
+    avatar: '1675470878164IMG-20221219-WA0043.jpg'
+  }
+]
+----------
+[
+  {
+    _id: new ObjectId("63dd0e4025a6e3b1cbdc8430"),
+    username: 'pacifire',
+    email: 'prashantrawat2jangamer@gmail.com',
+    password: '$2a$08$SMEo4KGaBUVPS6XluvJ1KeyLxWZ4zb9SigCUN2KlbJrkKYyKvmIme',
+    followers: [ '63dd1bc425a6e3b1cbdc8484', '63ddbc66c36ae2b574c29d0d' ],
+    followings: [ '63dd1bc425a6e3b1cbdc8484', '63ddbc66c36ae2b574c29d0d' ],
+    favoritePosts: [],
+    createdAt: 2023-02-03T13:38:08.848Z,
+    updatedAt: 2023-02-04T10:47:17.279Z,
+    __v: 0,
+    avatar: '1675507637011IMG-20221219-WA0093.jpg'
+  }
+]
+User [31mdisconnected[39m : [34mISokQznmoTeV7OBdAAAV[39m
+[44mOnline users: [49m [34m63ddbc66c36ae2b574c29d0d[39m
+Error: SocketError: Disconnect: No such user found
+    at Socket.<anonymous> (/home/pacifire/Programs/Web/FullStack/chat-ocean/api/socket/socketEvents.js:79:34)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+User [32mconnected[39m : [34mscxo8RTZyXnUqvSiAAAZ[39m
+eZdJwyzW9sMb2UnbAAAX  is online
+eZdJwyzW9sMb2UnbAAAX  is online
+eZdJwyzW9sMb2UnbAAAX  is online
+[
+  {
+    _id: new ObjectId("63ddbc66c36ae2b574c29d0d"),
+    username: 'stephen',
+    email: 'g@g.com',
+    password: '$2a$08$92p/IiOfHGgvLAO9I7cj0.g7fzAbojYimdmezRqi5RaxhExoCcg26',
+    followers: [ '63dd0e4025a6e3b1cbdc8430', '63dd1bc425a6e3b1cbdc8484' ],
+    followings: [ '63dd1bc425a6e3b1cbdc8484', '63dd0e4025a6e3b1cbdc8430' ],
+    favoritePosts: [],
+    createdAt: 2023-02-04T02:01:10.619Z,
+    updatedAt: 2023-02-04T14:44:38.815Z,
+    __v: 0,
+    avatar: '1675507689018stephen.jpeg'
+  }
+]
+----------
+[
+  {
+    _id: new ObjectId("63dd0e4025a6e3b1cbdc8430"),
+    username: 'pacifire',
+    email: 'prashantrawat2jangamer@gmail.com',
+    password: '$2a$08$SMEo4KGaBUVPS6XluvJ1KeyLxWZ4zb9SigCUN2KlbJrkKYyKvmIme',
+    followers: [ '63dd1bc425a6e3b1cbdc8484', '63ddbc66c36ae2b574c29d0d' ],
+    followings: [ '63dd1bc425a6e3b1cbdc8484', '63ddbc66c36ae2b574c29d0d' ],
+    favoritePosts: [],
+    createdAt: 2023-02-03T13:38:08.848Z,
+    updatedAt: 2023-02-04T10:47:17.279Z,
+    __v: 0,
+    avatar: '1675507637011IMG-20221219-WA0093.jpg'
+  }
+]
+User [31mdisconnected[39m : [34meZdJwyzW9sMb2UnbAAAX[39m
+Error: SocketError: Disconnect: No such user found
+    at Socket.<anonymous> (/home/pacifire/Programs/Web/FullStack/chat-ocean/api/socket/socketEvents.js:79:34)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+User [32mconnected[39m : [34mIwVcB68G5YQm5yLdAAAb[39m
+scxo8RTZyXnUqvSiAAAZ  is online
+[
+  {
+    _id: new ObjectId("63dd1bc425a6e3b1cbdc8484"),
+    username: 'abcdef',
+    email: 'abcdef@gmail.com',
+    password: '$2a$08$pw85aOzRkmwJuZ3HyVFJIuIT3oqHwX6q6tAO67XKD2TSXBQJgNmLu',
+    followers: [ '63dd0e4025a6e3b1cbdc8430', '63ddbc66c36ae2b574c29d0d' ],
+    followings: [ '63dd0e4025a6e3b1cbdc8430', '63ddbc66c36ae2b574c29d0d' ],
+    favoritePosts: [ '63dd53cb98027859fceb65ed' ],
+    createdAt: 2023-02-03T14:35:48.118Z,
+    updatedAt: 2023-02-04T02:03:04.650Z,
+    __v: 0,
+    firstName: 'Pacific',
+    avatar: '1675470878164IMG-20221219-WA0043.jpg'
+  }
+]
+----------
+[
+  {
+    _id: new ObjectId("63dd0e4025a6e3b1cbdc8430"),
+    username: 'pacifire',
+    email: 'prashantrawat2jangamer@gmail.com',
+    password: '$2a$08$SMEo4KGaBUVPS6XluvJ1KeyLxWZ4zb9SigCUN2KlbJrkKYyKvmIme',
+    followers: [ '63dd1bc425a6e3b1cbdc8484', '63ddbc66c36ae2b574c29d0d' ],
+    followings: [ '63dd1bc425a6e3b1cbdc8484', '63ddbc66c36ae2b574c29d0d' ],
+    favoritePosts: [],
+    createdAt: 2023-02-03T13:38:08.848Z,
+    updatedAt: 2023-02-04T10:47:17.279Z,
+    __v: 0,
+    avatar: '1675507637011IMG-20221219-WA0093.jpg'
+  }
+]
+[44mOnline users: [49m [34m63dd1bc425a6e3b1cbdc8484,63ddbc66c36ae2b574c29d0d[39m
+[44mOnline users: [49m [34m63dd1bc425a6e3b1cbdc8484,63ddbc66c36ae2b574c29d0d[39m
+[44mOnline users: [49m [34m63dd1bc425a6e3b1cbdc8484,63ddbc66c36ae2b574c29d0d[39m
+[44mOnline users: [49m [34m63dd1bc425a6e3b1cbdc8484,63ddbc66c36ae2b574c29d0d[39m
+[44mOnline users: [49m [34m63dd1bc425a6e3b1cbdc8484,63ddbc66c36ae2b574c29d0d[39m
+[44mOnline users: [49m [34m63dd1bc425a6e3b1cbdc8484,63ddbc66c36ae2b574c29d0d[39m
+[44mOnline users: [49m [34m63dd1bc425a6e3b1cbdc8484,63ddbc66c36ae2b574c29d0d[39m
+[
+  {
+    _id: new ObjectId("63dd1bc425a6e3b1cbdc8484"),
+    username: 'abcdef',
+    email: 'abcdef@gmail.com',
+    password: '$2a$08$pw85aOzRkmwJuZ3HyVFJIuIT3oqHwX6q6tAO67XKD2TSXBQJgNmLu',
+    followers: [ '63dd0e4025a6e3b1cbdc8430', '63ddbc66c36ae2b574c29d0d' ],
+    followings: [ '63dd0e4025a6e3b1cbdc8430', '63ddbc66c36ae2b574c29d0d' ],
+    favoritePosts: [ '63dd53cb98027859fceb65ed' ],
+    createdAt: 2023-02-03T14:35:48.118Z,
+    updatedAt: 2023-02-04T02:03:04.650Z,
+    __v: 0,
+    firstName: 'Pacific',
+    avatar: '1675470878164IMG-20221219-WA0043.jpg'
+  },
+  {
+    _id: new ObjectId("63ddbc66c36ae2b574c29d0d"),
+    username: 'stephen',
+    email: 'g@g.com',
+    password: '$2a$08$92p/IiOfHGgvLAO9I7cj0.g7fzAbojYimdmezRqi5RaxhExoCcg26',
+    followers: [ '63dd0e4025a6e3b1cbdc8430', '63dd1bc425a6e3b1cbdc8484' ],
+    followings: [ '63dd1bc425a6e3b1cbdc8484', '63dd0e4025a6e3b1cbdc8430' ],
+    favoritePosts: [],
+    createdAt: 2023-02-04T02:01:10.619Z,
+    updatedAt: 2023-02-04T14:44:38.815Z,
+    __v: 0,
+    avatar: '1675507689018stephen.jpeg'
+  }
+]
+----------
+[]
+[
+  {
+    _id: new ObjectId("63dd1bc425a6e3b1cbdc8484"),
+    username: 'abcdef',
+    email: 'abcdef@gmail.com',
+    password: '$2a$08$pw85aOzRkmwJuZ3HyVFJIuIT3oqHwX6q6tAO67XKD2TSXBQJgNmLu',
+    followers: [ '63dd0e4025a6e3b1cbdc8430', '63ddbc66c36ae2b574c29d0d' ],
+    followings: [ '63dd0e4025a6e3b1cbdc8430', '63ddbc66c36ae2b574c29d0d' ],
+    favoritePosts: [ '63dd53cb98027859fceb65ed' ],
+    createdAt: 2023-02-03T14:35:48.118Z,
+    updatedAt: 2023-02-04T02:03:04.650Z,
+    __v: 0,
+    firstName: 'Pacific',
+    avatar: '1675470878164IMG-20221219-WA0043.jpg'
+  },
+  {
+    _id: new ObjectId("63ddbc66c36ae2b574c29d0d"),
+    username: 'stephen',
+    email: 'g@g.com',
+    password: '$2a$08$92p/IiOfHGgvLAO9I7cj0.g7fzAbojYimdmezRqi5RaxhExoCcg26',
+    followers: [ '63dd0e4025a6e3b1cbdc8430', '63dd1bc425a6e3b1cbdc8484' ],
+    followings: [ '63dd1bc425a6e3b1cbdc8484', '63dd0e4025a6e3b1cbdc8430' ],
+    favoritePosts: [],
+    createdAt: 2023-02-04T02:01:10.619Z,
+    updatedAt: 2023-02-04T14:44:38.815Z,
+    __v: 0,
+    avatar: '1675507689018stephen.jpeg'
+  }
+]
+----------
+[]
+User [31mdisconnected[39m : [34mqTezt1wuIl_BAVKCAAAd[39m
+[
+  {
+    _id: new ObjectId("63dd1bc425a6e3b1cbdc8484"),
+    username: 'abcdef',
+    email: 'abcdef@gmail.com',
+    password: '$2a$08$pw85aOzRkmwJuZ3HyVFJIuIT3oqHwX6q6tAO67XKD2TSXBQJgNmLu',
+    followers: [ '63dd0e4025a6e3b1cbdc8430', '63ddbc66c36ae2b574c29d0d' ],
+    followings: [ '63dd0e4025a6e3b1cbdc8430', '63ddbc66c36ae2b574c29d0d' ],
+    favoritePosts: [ '63dd53cb98027859fceb65ed' ],
+    createdAt: 2023-02-03T14:35:48.118Z,
+    updatedAt: 2023-02-04T02:03:04.650Z,
+    __v: 0,
+    firstName: 'Pacific',
+    avatar: '1675470878164IMG-20221219-WA0043.jpg'
+  },
+  {
+    _id: new ObjectId("63ddbc66c36ae2b574c29d0d"),
+    username: 'stephen',
+    email: 'g@g.com',
+    password: '$2a$08$92p/IiOfHGgvLAO9I7cj0.g7fzAbojYimdmezRqi5RaxhExoCcg26',
+    followers: [ '63dd0e4025a6e3b1cbdc8430', '63dd1bc425a6e3b1cbdc8484' ],
+    followings: [ '63dd1bc425a6e3b1cbdc8484', '63dd0e4025a6e3b1cbdc8430' ],
+    favoritePosts: [],
+    createdAt: 2023-02-04T02:01:10.619Z,
+    updatedAt: 2023-02-04T14:44:38.815Z,
+    __v: 0,
+    avatar: '1675507689018stephen.jpeg'
+  }
+]
+----------
+[]
+Error: SocketError: Disconnect: No such user found
+    at Socket.<anonymous> (/home/pacifire/Programs/Web/FullStack/chat-ocean/api/socket/socketEvents.js:79:34)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[
+  {
+    _id: new ObjectId("63dd1bc425a6e3b1cbdc8484"),
+    username: 'abcdef',
+    email: 'abcdef@gmail.com',
+    password: '$2a$08$pw85aOzRkmwJuZ3HyVFJIuIT3oqHwX6q6tAO67XKD2TSXBQJgNmLu',
+    followers: [ '63dd0e4025a6e3b1cbdc8430', '63ddbc66c36ae2b574c29d0d' ],
+    followings: [ '63dd0e4025a6e3b1cbdc8430', '63ddbc66c36ae2b574c29d0d' ],
+    favoritePosts: [ '63dd53cb98027859fceb65ed' ],
+    createdAt: 2023-02-03T14:35:48.118Z,
+    updatedAt: 2023-02-04T02:03:04.650Z,
+    __v: 0,
+    firstName: 'Pacific',
+    avatar: '1675470878164IMG-20221219-WA0043.jpg'
+  },
+  {
+    _id: new ObjectId("63ddbc66c36ae2b574c29d0d"),
+    username: 'stephen',
+    email: 'g@g.com',
+    password: '$2a$08$92p/IiOfHGgvLAO9I7cj0.g7fzAbojYimdmezRqi5RaxhExoCcg26',
+    followers: [ '63dd0e4025a6e3b1cbdc8430', '63dd1bc425a6e3b1cbdc8484' ],
+    followings: [ '63dd1bc425a6e3b1cbdc8484', '63dd0e4025a6e3b1cbdc8430' ],
+    favoritePosts: [],
+    createdAt: 2023-02-04T02:01:10.619Z,
+    updatedAt: 2023-02-04T14:44:38.815Z,
+    __v: 0,
+    avatar: '1675507689018stephen.jpeg'
+  }
+]
+----------
+[]
+User [32mconnected[39m : [34m_ANTetzveWpHbQJOAAAf[39m
+IwVcB68G5YQm5yLdAAAb  is online
+scxo8RTZyXnUqvSiAAAZ  is online
+[
+  {
+    _id: new ObjectId("63dd1bc425a6e3b1cbdc8484"),
+    username: 'abcdef',
+    email: 'abcdef@gmail.com',
+    password: '$2a$08$pw85aOzRkmwJuZ3HyVFJIuIT3oqHwX6q6tAO67XKD2TSXBQJgNmLu',
+    followers: [ '63dd0e4025a6e3b1cbdc8430', '63ddbc66c36ae2b574c29d0d' ],
+    followings: [ '63dd0e4025a6e3b1cbdc8430', '63ddbc66c36ae2b574c29d0d' ],
+    favoritePosts: [ '63dd53cb98027859fceb65ed' ],
+    createdAt: 2023-02-03T14:35:48.118Z,
+    updatedAt: 2023-02-04T02:03:04.650Z,
+    __v: 0,
+    firstName: 'Pacific',
+    avatar: '1675470878164IMG-20221219-WA0043.jpg'
+  },
+  {
+    _id: new ObjectId("63ddbc66c36ae2b574c29d0d"),
+    username: 'stephen',
+    email: 'g@g.com',
+    password: '$2a$08$92p/IiOfHGgvLAO9I7cj0.g7fzAbojYimdmezRqi5RaxhExoCcg26',
+    followers: [ '63dd0e4025a6e3b1cbdc8430', '63dd1bc425a6e3b1cbdc8484' ],
+    followings: [ '63dd1bc425a6e3b1cbdc8484', '63dd0e4025a6e3b1cbdc8430' ],
+    favoritePosts: [],
+    createdAt: 2023-02-04T02:01:10.619Z,
+    updatedAt: 2023-02-04T14:44:38.815Z,
+    __v: 0,
+    avatar: '1675507689018stephen.jpeg'
+  }
+]
+----------
+[]
+[44mOnline users: [49m [34m63dd1bc425a6e3b1cbdc8484,63ddbc66c36ae2b574c29d0d,63dd0e4025a6e3b1cbdc8430[39m
+[44mOnline users: [49m [34m63dd1bc425a6e3b1cbdc8484,63ddbc66c36ae2b574c29d0d,63dd0e4025a6e3b1cbdc8430[39m
+[44mOnline users: [49m [34m63dd1bc425a6e3b1cbdc8484,63ddbc66c36ae2b574c29d0d,63dd0e4025a6e3b1cbdc8430[39m
+[44mOnline users: [49m [34m63dd1bc425a6e3b1cbdc8484,63ddbc66c36ae2b574c29d0d,63dd0e4025a6e3b1cbdc8430[39m
+[44mOnline users: [49m [34m63dd1bc425a6e3b1cbdc8484,63ddbc66c36ae2b574c29d0d,63dd0e4025a6e3b1cbdc8430[39m
+[44mOnline users: [49m [34m63dd1bc425a6e3b1cbdc8484,63ddbc66c36ae2b574c29d0d,63dd0e4025a6e3b1cbdc8430[39m
+[44mOnline users: [49m [34m63dd1bc425a6e3b1cbdc8484,63ddbc66c36ae2b574c29d0d,63dd0e4025a6e3b1cbdc8430[39m
+[44mOnline users: [49m [34m63dd1bc425a6e3b1cbdc8484,63ddbc66c36ae2b574c29d0d,63dd0e4025a6e3b1cbdc8430[39m
+[44mOnline users: [49m [34m63dd1bc425a6e3b1cbdc8484,63ddbc66c36ae2b574c29d0d,63dd0e4025a6e3b1cbdc8430[39m
+[44mOnline users: [49m [34m63dd1bc425a6e3b1cbdc8484,63ddbc66c36ae2b574c29d0d,63dd0e4025a6e3b1cbdc8430[39m
+[44mOnline users: [49m [34m63dd1bc425a6e3b1cbdc8484,63ddbc66c36ae2b574c29d0d,63dd0e4025a6e3b1cbdc8430[39m
+[44mOnline users: [49m [34m63dd1bc425a6e3b1cbdc8484,63ddbc66c36ae2b574c29d0d,63dd0e4025a6e3b1cbdc8430[39m
+[44mOnline users: [49m [34m63dd1bc425a6e3b1cbdc8484,63ddbc66c36ae2b574c29d0d,63dd0e4025a6e3b1cbdc8430[39m
+[44mOnline users: [49m [34m63dd1bc425a6e3b1cbdc8484,63ddbc66c36ae2b574c29d0d,63dd0e4025a6e3b1cbdc8430[39m
+[44mOnline users: [49m [34m63dd1bc425a6e3b1cbdc8484,63ddbc66c36ae2b574c29d0d,63dd0e4025a6e3b1cbdc8430[39m
+[44mOnline users: [49m [34m63dd1bc425a6e3b1cbdc8484,63ddbc66c36ae2b574c29d0d,63dd0e4025a6e3b1cbdc8430[39m
+[44mOnline users: [49m [34m63dd1bc425a6e3b1cbdc8484,63ddbc66c36ae2b574c29d0d,63dd0e4025a6e3b1cbdc8430[39m
+[44mOnline users: [49m [34m63dd1bc425a6e3b1cbdc8484,63ddbc66c36ae2b574c29d0d,63dd0e4025a6e3b1cbdc8430[39m
+[44mOnline users: [49m [34m63dd1bc425a6e3b1cbdc8484,63ddbc66c36ae2b574c29d0d,63dd0e4025a6e3b1cbdc8430[39m
+[44mOnline users: [49m [34m63dd1bc425a6e3b1cbdc8484,63ddbc66c36ae2b574c29d0d,63dd0e4025a6e3b1cbdc8430[39m
+[44mOnline users: [49m [34m63dd1bc425a6e3b1cbdc8484,63ddbc66c36ae2b574c29d0d,63dd0e4025a6e3b1cbdc8430[39m
+[44mOnline users: [49m [34m63dd1bc425a6e3b1cbdc8484,63ddbc66c36ae2b574c29d0d,63dd0e4025a6e3b1cbdc8430[39m
+[44mOnline users: [49m [34m63dd1bc425a6e3b1cbdc8484,63ddbc66c36ae2b574c29d0d,63dd0e4025a6e3b1cbdc8430[39m
+[44mOnline users: [49m [34m63dd1bc425a6e3b1cbdc8484,63ddbc66c36ae2b574c29d0d,63dd0e4025a6e3b1cbdc8430[39m
+[44mOnline users: [49m [34m63dd1bc425a6e3b1cbdc8484,63ddbc66c36ae2b574c29d0d,63dd0e4025a6e3b1cbdc8430[39m
+[44mOnline users: [49m [34m63dd1bc425a6e3b1cbdc8484,63ddbc66c36ae2b574c29d0d,63dd0e4025a6e3b1cbdc8430[39m
+[44mOnline users: [49m [34m63dd1bc425a6e3b1cbdc8484,63ddbc66c36ae2b574c29d0d,63dd0e4025a6e3b1cbdc8430[39m
+[44mOnline users: [49m [34m63dd1bc425a6e3b1cbdc8484,63ddbc66c36ae2b574c29d0d,63dd0e4025a6e3b1cbdc8430[39m
+[44mOnline users: [49m [34m63dd1bc425a6e3b1cbdc8484,63ddbc66c36ae2b574c29d0d,63dd0e4025a6e3b1cbdc8430[39m
+[44mOnline users: [49m [34m63dd1bc425a6e3b1cbdc8484,63ddbc66c36ae2b574c29d0d,63dd0e4025a6e3b1cbdc8430[39m
+[44mOnline users: [49m [34m63dd1bc425a6e3b1cbdc8484,63ddbc66c36ae2b574c29d0d,63dd0e4025a6e3b1cbdc8430[39m
+[44mOnline users: [49m [34m63dd1bc425a6e3b1cbdc8484,63ddbc66c36ae2b574c29d0d,63dd0e4025a6e3b1cbdc8430[39m
+[44mOnline users: [49m [34m63dd1bc425a6e3b1cbdc8484,63ddbc66c36ae2b574c29d0d,63dd0e4025a6e3b1cbdc8430[39m
+[44mOnline users: [49m [34m63dd1bc425a6e3b1cbdc8484,63ddbc66c36ae2b574c29d0d,63dd0e4025a6e3b1cbdc8430[39m
+[44mOnline users: [49m [34m63dd1bc425a6e3b1cbdc8484,63ddbc66c36ae2b574c29d0d,63dd0e4025a6e3b1cbdc8430[39m
+[44mOnline users: [49m [34m63dd1bc425a6e3b1cbdc8484,63ddbc66c36ae2b574c29d0d,63dd0e4025a6e3b1cbdc8430[39m
+[44mOnline users: [49m [34m63dd1bc425a6e3b1cbdc8484,63ddbc66c36ae2b574c29d0d,63dd0e4025a6e3b1cbdc8430[39m
+[44mOnline users: [49m [34m63dd1bc425a6e3b1cbdc8484,63ddbc66c36ae2b574c29d0d,63dd0e4025a6e3b1cbdc8430[39m
+[44mOnline users: [49m [34m63dd1bc425a6e3b1cbdc8484,63ddbc66c36ae2b574c29d0d,63dd0e4025a6e3b1cbdc8430[39m
+[44mOnline users: [49m [34m63dd1bc425a6e3b1cbdc8484,63ddbc66c36ae2b574c29d0d,63dd0e4025a6e3b1cbdc8430[39m
+[44mOnline users: [49m [34m63dd1bc425a6e3b1cbdc8484,63ddbc66c36ae2b574c29d0d,63dd0e4025a6e3b1cbdc8430[39m
+[44mOnline users: [49m [34m63dd1bc425a6e3b1cbdc8484,63ddbc66c36ae2b574c29d0d,63dd0e4025a6e3b1cbdc8430[39m
+[44mOnline users: [49m [34m63dd1bc425a6e3b1cbdc8484,63ddbc66c36ae2b574c29d0d,63dd0e4025a6e3b1cbdc8430[39m
+[44mOnline users: [49m [34m63dd1bc425a6e3b1cbdc8484,63ddbc66c36ae2b574c29d0d,63dd0e4025a6e3b1cbdc8430[39m
+[44mOnline users: [49m [34m63dd1bc425a6e3b1cbdc8484,63ddbc66c36ae2b574c29d0d,63dd0e4025a6e3b1cbdc8430[39m
+[44mOnline users: [49m [34m63dd1bc425a6e3b1cbdc8484,63ddbc66c36ae2b574c29d0d,63dd0e4025a6e3b1cbdc8430[39m
+[44mOnline users: [49m [34m63dd1bc425a6e3b1cbdc8484,63ddbc66c36ae2b574c29d0d,63dd0e4025a6e3b1cbdc8430[39m
+[44mOnline users: [49m [34m63dd1bc425a6e3b1cbdc8484,63ddbc66c36ae2b574c29d0d,63dd0e4025a6e3b1cbdc8430[39m
+[44mOnline users: [49m [34m63dd1bc425a6e3b1cbdc8484,63ddbc66c36ae2b574c29d0d,63dd0e4025a6e3b1cbdc8430[39m
+[44mOnline users: [49m [34m63dd1bc425a6e3b1cbdc8484,63ddbc66c36ae2b574c29d0d,63dd0e4025a6e3b1cbdc8430[39m
+[44mOnline users: [49m [34m63dd1bc425a6e3b1cbdc8484,63ddbc66c36ae2b574c29d0d,63dd0e4025a6e3b1cbdc8430[39m
+[44mOnline users: [49m [34m63dd1bc425a6e3b1cbdc8484,63ddbc66c36ae2b574c29d0d,63dd0e4025a6e3b1cbdc8430[39m
+[44mOnline users: [49m [34m63dd1bc425a6e3b1cbdc8484,63ddbc66c36ae2b574c29d0d,63dd0e4025a6e3b1cbdc8430[39m
+[44mOnline users: [49m [34m63dd1bc425a6e3b1cbdc8484,63ddbc66c36ae2b574c29d0d,63dd0e4025a6e3b1cbdc8430[39m
+[44mOnline users: [49m [34m63dd1bc425a6e3b1cbdc8484,63ddbc66c36ae2b574c29d0d,63dd0e4025a6e3b1cbdc8430[39m
+[44mOnline users: [49m [34m63dd1bc425a6e3b1cbdc8484,63ddbc66c36ae2b574c29d0d,63dd0e4025a6e3b1cbdc8430[39m
+User [31mdisconnected[39m : [34mscxo8RTZyXnUqvSiAAAZ[39m
+User [31mdisconnected[39m : [34mIwVcB68G5YQm5yLdAAAb[39m
+Error: SocketError: Disconnect: No such user found
+    at Socket.<anonymous> (/home/pacifire/Programs/Web/FullStack/chat-ocean/api/socket/socketEvents.js:79:34)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at runNextTicks (node:internal/process/task_queues:65:3)
+    at processImmediate (node:internal/timers:437:9)
+Error: SocketError: Disconnect: No such user found
+    at Socket.<anonymous> (/home/pacifire/Programs/Web/FullStack/chat-ocean/api/socket/socketEvents.js:79:34)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+User [31mdisconnected[39m : [34m_ANTetzveWpHbQJOAAAf[39m
+Error: SocketError: Disconnect: No such user found
+    at Socket.<anonymous> (/home/pacifire/Programs/Web/FullStack/chat-ocean/api/socket/socketEvents.js:79:34)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+User [32mconnected[39m : [34mphA137k-Ss3_uUp1AAAj[39m
+User [32mconnected[39m : [34mlmZqZBIPcCT73h5kAAAl[39m
+[]
+----------
+[
+  {
+    _id: new ObjectId("63dd0e4025a6e3b1cbdc8430"),
+    username: 'pacifire',
+    email: 'prashantrawat2jangamer@gmail.com',
+    password: '$2a$08$SMEo4KGaBUVPS6XluvJ1KeyLxWZ4zb9SigCUN2KlbJrkKYyKvmIme',
+    followers: [ '63dd1bc425a6e3b1cbdc8484', '63ddbc66c36ae2b574c29d0d' ],
+    followings: [ '63dd1bc425a6e3b1cbdc8484', '63ddbc66c36ae2b574c29d0d' ],
+    favoritePosts: [],
+    createdAt: 2023-02-03T13:38:08.848Z,
+    updatedAt: 2023-02-04T10:47:17.279Z,
+    __v: 0,
+    avatar: '1675507637011IMG-20221219-WA0093.jpg'
+  },
+  {
+    _id: new ObjectId("63dd1bc425a6e3b1cbdc8484"),
+    username: 'abcdef',
+    email: 'abcdef@gmail.com',
+    password: '$2a$08$pw85aOzRkmwJuZ3HyVFJIuIT3oqHwX6q6tAO67XKD2TSXBQJgNmLu',
+    followers: [ '63dd0e4025a6e3b1cbdc8430', '63ddbc66c36ae2b574c29d0d' ],
+    followings: [ '63dd0e4025a6e3b1cbdc8430', '63ddbc66c36ae2b574c29d0d' ],
+    favoritePosts: [ '63dd53cb98027859fceb65ed' ],
+    createdAt: 2023-02-03T14:35:48.118Z,
+    updatedAt: 2023-02-04T02:03:04.650Z,
+    __v: 0,
+    firstName: 'Pacific',
+    avatar: '1675470878164IMG-20221219-WA0043.jpg'
+  }
+]
+phA137k-Ss3_uUp1AAAj  is online
+User [32mconnected[39m : [34mOhyZdrvPmctChIBLAAAi[39m
+[
+  {
+    _id: new ObjectId("63ddbc66c36ae2b574c29d0d"),
+    username: 'stephen',
+    email: 'g@g.com',
+    password: '$2a$08$92p/IiOfHGgvLAO9I7cj0.g7fzAbojYimdmezRqi5RaxhExoCcg26',
+    followers: [ '63dd0e4025a6e3b1cbdc8430', '63dd1bc425a6e3b1cbdc8484' ],
+    followings: [ '63dd1bc425a6e3b1cbdc8484', '63dd0e4025a6e3b1cbdc8430' ],
+    favoritePosts: [],
+    createdAt: 2023-02-04T02:01:10.619Z,
+    updatedAt: 2023-02-04T14:44:38.815Z,
+    __v: 0,
+    avatar: '1675507689018stephen.jpeg'
+  }
+]
+----------
+[
+  {
+    _id: new ObjectId("63dd1bc425a6e3b1cbdc8484"),
+    username: 'abcdef',
+    email: 'abcdef@gmail.com',
+    password: '$2a$08$pw85aOzRkmwJuZ3HyVFJIuIT3oqHwX6q6tAO67XKD2TSXBQJgNmLu',
+    followers: [ '63dd0e4025a6e3b1cbdc8430', '63ddbc66c36ae2b574c29d0d' ],
+    followings: [ '63dd0e4025a6e3b1cbdc8430', '63ddbc66c36ae2b574c29d0d' ],
+    favoritePosts: [ '63dd53cb98027859fceb65ed' ],
+    createdAt: 2023-02-03T14:35:48.118Z,
+    updatedAt: 2023-02-04T02:03:04.650Z,
+    __v: 0,
+    firstName: 'Pacific',
+    avatar: '1675470878164IMG-20221219-WA0043.jpg'
+  }
+]
+phA137k-Ss3_uUp1AAAj  is online
+lmZqZBIPcCT73h5kAAAl  is online
+[
+  {
+    _id: new ObjectId("63dd0e4025a6e3b1cbdc8430"),
+    username: 'pacifire',
+    email: 'prashantrawat2jangamer@gmail.com',
+    password: '$2a$08$SMEo4KGaBUVPS6XluvJ1KeyLxWZ4zb9SigCUN2KlbJrkKYyKvmIme',
+    followers: [ '63dd1bc425a6e3b1cbdc8484', '63ddbc66c36ae2b574c29d0d' ],
+    followings: [ '63dd1bc425a6e3b1cbdc8484', '63ddbc66c36ae2b574c29d0d' ],
+    favoritePosts: [],
+    createdAt: 2023-02-03T13:38:08.848Z,
+    updatedAt: 2023-02-04T10:47:17.279Z,
+    __v: 0,
+    avatar: '1675507637011IMG-20221219-WA0093.jpg'
+  },
+  {
+    _id: new ObjectId("63ddbc66c36ae2b574c29d0d"),
+    username: 'stephen',
+    email: 'g@g.com',
+    password: '$2a$08$92p/IiOfHGgvLAO9I7cj0.g7fzAbojYimdmezRqi5RaxhExoCcg26',
+    followers: [ '63dd0e4025a6e3b1cbdc8430', '63dd1bc425a6e3b1cbdc8484' ],
+    followings: [ '63dd1bc425a6e3b1cbdc8484', '63dd0e4025a6e3b1cbdc8430' ],
+    favoritePosts: [],
+    createdAt: 2023-02-04T02:01:10.619Z,
+    updatedAt: 2023-02-04T14:44:38.815Z,
+    __v: 0,
+    avatar: '1675507689018stephen.jpeg'
+  }
+]
+----------
+[]
+[44mOnline users: [49m [34m63ddbc66c36ae2b574c29d0d,63dd0e4025a6e3b1cbdc8430,63dd1bc425a6e3b1cbdc8484[39m
+[44mOnline users: [49m [34m63ddbc66c36ae2b574c29d0d,63dd0e4025a6e3b1cbdc8430,63dd1bc425a6e3b1cbdc8484[39m
+[44mOnline users: [49m [34m63ddbc66c36ae2b574c29d0d,63dd0e4025a6e3b1cbdc8430,63dd1bc425a6e3b1cbdc8484[39m
+[44mOnline users: [49m [34m63ddbc66c36ae2b574c29d0d,63dd0e4025a6e3b1cbdc8430,63dd1bc425a6e3b1cbdc8484[39m
+[44mOnline users: [49m [34m63ddbc66c36ae2b574c29d0d,63dd0e4025a6e3b1cbdc8430,63dd1bc425a6e3b1cbdc8484[39m
+[44mOnline users: [49m [34m63ddbc66c36ae2b574c29d0d,63dd0e4025a6e3b1cbdc8430,63dd1bc425a6e3b1cbdc8484[39m
+[44mOnline users: [49m [34m63ddbc66c36ae2b574c29d0d,63dd0e4025a6e3b1cbdc8430,63dd1bc425a6e3b1cbdc8484[39m
+[44mOnline users: [49m [34m63ddbc66c36ae2b574c29d0d,63dd0e4025a6e3b1cbdc8430,63dd1bc425a6e3b1cbdc8484[39m
+[44mOnline users: [49m [34m63ddbc66c36ae2b574c29d0d,63dd0e4025a6e3b1cbdc8430,63dd1bc425a6e3b1cbdc8484[39m
+[44mOnline users: [49m [34m63ddbc66c36ae2b574c29d0d,63dd0e4025a6e3b1cbdc8430,63dd1bc425a6e3b1cbdc8484[39m
+[44mOnline users: [49m [34m63ddbc66c36ae2b574c29d0d,63dd0e4025a6e3b1cbdc8430,63dd1bc425a6e3b1cbdc8484[39m
+[44mOnline users: [49m [34m63ddbc66c36ae2b574c29d0d,63dd0e4025a6e3b1cbdc8430,63dd1bc425a6e3b1cbdc8484[39m
+[44mOnline users: [49m [34m63ddbc66c36ae2b574c29d0d,63dd0e4025a6e3b1cbdc8430,63dd1bc425a6e3b1cbdc8484[39m
+[44mOnline users: [49m [34m63ddbc66c36ae2b574c29d0d,63dd0e4025a6e3b1cbdc8430,63dd1bc425a6e3b1cbdc8484[39m
+[44mOnline users: [49m [34m63ddbc66c36ae2b574c29d0d,63dd0e4025a6e3b1cbdc8430,63dd1bc425a6e3b1cbdc8484[39m
+[44mOnline users: [49m [34m63ddbc66c36ae2b574c29d0d,63dd0e4025a6e3b1cbdc8430,63dd1bc425a6e3b1cbdc8484[39m
+User [31mdisconnected[39m : [34mOhyZdrvPmctChIBLAAAi[39m
+User [31mdisconnected[39m : [34mphA137k-Ss3_uUp1AAAj[39m
+Error: SocketError: Disconnect: No such user found
+    at Socket.<anonymous> (/home/pacifire/Programs/Web/FullStack/chat-ocean/api/socket/socketEvents.js:79:34)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at runNextTicks (node:internal/process/task_queues:65:3)
+    at processImmediate (node:internal/timers:437:9)
+Error: SocketError: Disconnect: No such user found
+    at Socket.<anonymous> (/home/pacifire/Programs/Web/FullStack/chat-ocean/api/socket/socketEvents.js:79:34)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+User [32mconnected[39m : [34mDlE7B0xtK4XscsoyAAAp[39m
+[
+  {
+    _id: new ObjectId("63dd0e4025a6e3b1cbdc8430"),
+    username: 'pacifire',
+    email: 'prashantrawat2jangamer@gmail.com',
+    password: '$2a$08$SMEo4KGaBUVPS6XluvJ1KeyLxWZ4zb9SigCUN2KlbJrkKYyKvmIme',
+    followers: [ '63dd1bc425a6e3b1cbdc8484', '63ddbc66c36ae2b574c29d0d' ],
+    followings: [ '63dd1bc425a6e3b1cbdc8484', '63ddbc66c36ae2b574c29d0d' ],
+    favoritePosts: [],
+    createdAt: 2023-02-03T13:38:08.848Z,
+    updatedAt: 2023-02-04T10:47:17.279Z,
+    __v: 0,
+    avatar: '1675507637011IMG-20221219-WA0093.jpg'
+  }
+]
+----------
+[
+  {
+    _id: new ObjectId("63dd1bc425a6e3b1cbdc8484"),
+    username: 'abcdef',
+    email: 'abcdef@gmail.com',
+    password: '$2a$08$pw85aOzRkmwJuZ3HyVFJIuIT3oqHwX6q6tAO67XKD2TSXBQJgNmLu',
+    followers: [ '63dd0e4025a6e3b1cbdc8430', '63ddbc66c36ae2b574c29d0d' ],
+    followings: [ '63dd0e4025a6e3b1cbdc8430', '63ddbc66c36ae2b574c29d0d' ],
+    favoritePosts: [ '63dd53cb98027859fceb65ed' ],
+    createdAt: 2023-02-03T14:35:48.118Z,
+    updatedAt: 2023-02-04T02:03:04.650Z,
+    __v: 0,
+    firstName: 'Pacific',
+    avatar: '1675470878164IMG-20221219-WA0043.jpg'
+  }
+]
+User [32mconnected[39m : [34mGnmRn5qXm5MtfxNeAAAo[39m
+DlE7B0xtK4XscsoyAAAp  is online
+[
+  {
+    _id: new ObjectId("63dd0e4025a6e3b1cbdc8430"),
+    username: 'pacifire',
+    email: 'prashantrawat2jangamer@gmail.com',
+    password: '$2a$08$SMEo4KGaBUVPS6XluvJ1KeyLxWZ4zb9SigCUN2KlbJrkKYyKvmIme',
+    followers: [ '63dd1bc425a6e3b1cbdc8484', '63ddbc66c36ae2b574c29d0d' ],
+    followings: [ '63dd1bc425a6e3b1cbdc8484', '63ddbc66c36ae2b574c29d0d' ],
+    favoritePosts: [],
+    createdAt: 2023-02-03T13:38:08.848Z,
+    updatedAt: 2023-02-04T10:47:17.279Z,
+    __v: 0,
+    avatar: '1675507637011IMG-20221219-WA0093.jpg'
+  },
+  {
+    _id: new ObjectId("63ddbc66c36ae2b574c29d0d"),
+    username: 'stephen',
+    email: 'g@g.com',
+    password: '$2a$08$92p/IiOfHGgvLAO9I7cj0.g7fzAbojYimdmezRqi5RaxhExoCcg26',
+    followers: [ '63dd0e4025a6e3b1cbdc8430', '63dd1bc425a6e3b1cbdc8484' ],
+    followings: [ '63dd1bc425a6e3b1cbdc8484', '63dd0e4025a6e3b1cbdc8430' ],
+    favoritePosts: [],
+    createdAt: 2023-02-04T02:01:10.619Z,
+    updatedAt: 2023-02-04T14:44:38.815Z,
+    __v: 0,
+    avatar: '1675507689018stephen.jpeg'
+  }
+]
+----------
+[]
+lmZqZBIPcCT73h5kAAAl  is online
+lmZqZBIPcCT73h5kAAAl  is online
+[44mOnline users: [49m [34m63dd0e4025a6e3b1cbdc8430,63ddbc66c36ae2b574c29d0d,63dd1bc425a6e3b1cbdc8484[39m
+User [31mdisconnected[39m : [34mlmZqZBIPcCT73h5kAAAl[39m
+Error: SocketError: Disconnect: No such user found
+    at Socket.<anonymous> (/home/pacifire/Programs/Web/FullStack/chat-ocean/api/socket/socketEvents.js:79:34)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+User [32mconnected[39m : [34mtHujNf9CyKJIf05jAAAr[39m
+GnmRn5qXm5MtfxNeAAAo  is online
+DlE7B0xtK4XscsoyAAAp  is online
+User [31mdisconnected[39m : [34mGnmRn5qXm5MtfxNeAAAo[39m
+Error: SocketError: Disconnect: No such user found
+    at Socket.<anonymous> (/home/pacifire/Programs/Web/FullStack/chat-ocean/api/socket/socketEvents.js:79:34)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[
+  {
+    _id: new ObjectId("63dd1bc425a6e3b1cbdc8484"),
+    username: 'abcdef',
+    email: 'abcdef@gmail.com',
+    password: '$2a$08$pw85aOzRkmwJuZ3HyVFJIuIT3oqHwX6q6tAO67XKD2TSXBQJgNmLu',
+    followers: [ '63dd0e4025a6e3b1cbdc8430', '63ddbc66c36ae2b574c29d0d' ],
+    followings: [ '63dd0e4025a6e3b1cbdc8430', '63ddbc66c36ae2b574c29d0d' ],
+    favoritePosts: [ '63dd53cb98027859fceb65ed' ],
+    createdAt: 2023-02-03T14:35:48.118Z,
+    updatedAt: 2023-02-04T02:03:04.650Z,
+    __v: 0,
+    firstName: 'Pacific',
+    avatar: '1675470878164IMG-20221219-WA0043.jpg'
+  },
+  {
+    _id: new ObjectId("63ddbc66c36ae2b574c29d0d"),
+    username: 'stephen',
+    email: 'g@g.com',
+    password: '$2a$08$92p/IiOfHGgvLAO9I7cj0.g7fzAbojYimdmezRqi5RaxhExoCcg26',
+    followers: [ '63dd0e4025a6e3b1cbdc8430', '63dd1bc425a6e3b1cbdc8484' ],
+    followings: [ '63dd1bc425a6e3b1cbdc8484', '63dd0e4025a6e3b1cbdc8430' ],
+    favoritePosts: [],
+    createdAt: 2023-02-04T02:01:10.619Z,
+    updatedAt: 2023-02-04T14:44:38.815Z,
+    __v: 0,
+    avatar: '1675507689018stephen.jpeg'
+  }
+]
+----------
+[]
+User [32mconnected[39m : [34mzFOnlpgkUJea5rPFAAAt[39m
+DlE7B0xtK4XscsoyAAAp  is online
+tHujNf9CyKJIf05jAAAr  is online
+[
+  {
+    _id: new ObjectId("63dd0e4025a6e3b1cbdc8430"),
+    username: 'pacifire',
+    email: 'prashantrawat2jangamer@gmail.com',
+    password: '$2a$08$SMEo4KGaBUVPS6XluvJ1KeyLxWZ4zb9SigCUN2KlbJrkKYyKvmIme',
+    followers: [ '63dd1bc425a6e3b1cbdc8484', '63ddbc66c36ae2b574c29d0d' ],
+    followings: [ '63dd1bc425a6e3b1cbdc8484', '63ddbc66c36ae2b574c29d0d' ],
+    favoritePosts: [],
+    createdAt: 2023-02-03T13:38:08.848Z,
+    updatedAt: 2023-02-04T10:47:17.279Z,
+    __v: 0,
+    avatar: '1675507637011IMG-20221219-WA0093.jpg'
+  },
+  {
+    _id: new ObjectId("63ddbc66c36ae2b574c29d0d"),
+    username: 'stephen',
+    email: 'g@g.com',
+    password: '$2a$08$92p/IiOfHGgvLAO9I7cj0.g7fzAbojYimdmezRqi5RaxhExoCcg26',
+    followers: [ '63dd0e4025a6e3b1cbdc8430', '63dd1bc425a6e3b1cbdc8484' ],
+    followings: [ '63dd1bc425a6e3b1cbdc8484', '63dd0e4025a6e3b1cbdc8430' ],
+    favoritePosts: [],
+    createdAt: 2023-02-04T02:01:10.619Z,
+    updatedAt: 2023-02-04T14:44:38.815Z,
+    __v: 0,
+    avatar: '1675507689018stephen.jpeg'
+  }
+]
+----------
+[]
+[44mOnline users: [49m [34m63ddbc66c36ae2b574c29d0d,63dd0e4025a6e3b1cbdc8430,63dd1bc425a6e3b1cbdc8484[39m
+User [31mdisconnected[39m : [34mDlE7B0xtK4XscsoyAAAp[39m
+Error: SocketError: Disconnect: No such user found
+    at Socket.<anonymous> (/home/pacifire/Programs/Web/FullStack/chat-ocean/api/socket/socketEvents.js:79:34)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+User [32mconnected[39m : [34mJY-qkRPaflqfkOstAAAv[39m
+zFOnlpgkUJea5rPFAAAt  is online
+tHujNf9CyKJIf05jAAAr  is online
+[
+  {
+    _id: new ObjectId("63dd0e4025a6e3b1cbdc8430"),
+    username: 'pacifire',
+    email: 'prashantrawat2jangamer@gmail.com',
+    password: '$2a$08$SMEo4KGaBUVPS6XluvJ1KeyLxWZ4zb9SigCUN2KlbJrkKYyKvmIme',
+    followers: [ '63dd1bc425a6e3b1cbdc8484', '63ddbc66c36ae2b574c29d0d' ],
+    followings: [ '63dd1bc425a6e3b1cbdc8484', '63ddbc66c36ae2b574c29d0d' ],
+    favoritePosts: [],
+    createdAt: 2023-02-03T13:38:08.848Z,
+    updatedAt: 2023-02-04T10:47:17.279Z,
+    __v: 0,
+    avatar: '1675507637011IMG-20221219-WA0093.jpg'
+  },
+  {
+    _id: new ObjectId("63dd1bc425a6e3b1cbdc8484"),
+    username: 'abcdef',
+    email: 'abcdef@gmail.com',
+    password: '$2a$08$pw85aOzRkmwJuZ3HyVFJIuIT3oqHwX6q6tAO67XKD2TSXBQJgNmLu',
+    followers: [ '63dd0e4025a6e3b1cbdc8430', '63ddbc66c36ae2b574c29d0d' ],
+    followings: [ '63dd0e4025a6e3b1cbdc8430', '63ddbc66c36ae2b574c29d0d' ],
+    favoritePosts: [ '63dd53cb98027859fceb65ed' ],
+    createdAt: 2023-02-03T14:35:48.118Z,
+    updatedAt: 2023-02-04T02:03:04.650Z,
+    __v: 0,
+    firstName: 'Pacific',
+    avatar: '1675470878164IMG-20221219-WA0043.jpg'
+  }
+]
+----------
+[]
+[44mOnline users: [49m [34m63dd0e4025a6e3b1cbdc8430,63dd1bc425a6e3b1cbdc8484,63ddbc66c36ae2b574c29d0d[39m
+User [31mdisconnected[39m : [34mtHujNf9CyKJIf05jAAAr[39m
+Error: SocketError: Disconnect: No such user found
+    at Socket.<anonymous> (/home/pacifire/Programs/Web/FullStack/chat-ocean/api/socket/socketEvents.js:79:34)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+User [32mconnected[39m : [34mayQKE72V-iqYf45vAAAx[39m
+JY-qkRPaflqfkOstAAAv  is online
+zFOnlpgkUJea5rPFAAAt  is online
+[
+  {
+    _id: new ObjectId("63dd1bc425a6e3b1cbdc8484"),
+    username: 'abcdef',
+    email: 'abcdef@gmail.com',
+    password: '$2a$08$pw85aOzRkmwJuZ3HyVFJIuIT3oqHwX6q6tAO67XKD2TSXBQJgNmLu',
+    followers: [ '63dd0e4025a6e3b1cbdc8430', '63ddbc66c36ae2b574c29d0d' ],
+    followings: [ '63dd0e4025a6e3b1cbdc8430', '63ddbc66c36ae2b574c29d0d' ],
+    favoritePosts: [ '63dd53cb98027859fceb65ed' ],
+    createdAt: 2023-02-03T14:35:48.118Z,
+    updatedAt: 2023-02-04T02:03:04.650Z,
+    __v: 0,
+    firstName: 'Pacific',
+    avatar: '1675470878164IMG-20221219-WA0043.jpg'
+  },
+  {
+    _id: new ObjectId("63ddbc66c36ae2b574c29d0d"),
+    username: 'stephen',
+    email: 'g@g.com',
+    password: '$2a$08$92p/IiOfHGgvLAO9I7cj0.g7fzAbojYimdmezRqi5RaxhExoCcg26',
+    followers: [ '63dd0e4025a6e3b1cbdc8430', '63dd1bc425a6e3b1cbdc8484' ],
+    followings: [ '63dd1bc425a6e3b1cbdc8484', '63dd0e4025a6e3b1cbdc8430' ],
+    favoritePosts: [],
+    createdAt: 2023-02-04T02:01:10.619Z,
+    updatedAt: 2023-02-04T14:44:38.815Z,
+    __v: 0,
+    avatar: '1675507689018stephen.jpeg'
+  }
+]
+----------
+[]
+[44mOnline users: [49m [34m63dd1bc425a6e3b1cbdc8484,63ddbc66c36ae2b574c29d0d,63dd0e4025a6e3b1cbdc8430[39m
+User [31mdisconnected[39m : [34mayQKE72V-iqYf45vAAAx[39m
+[44mOnline users: [49m [34m63dd1bc425a6e3b1cbdc8484,63ddbc66c36ae2b574c29d0d[39m
+[44mOnline users: [49m [34m63dd1bc425a6e3b1cbdc8484,63ddbc66c36ae2b574c29d0d[39m
+[44mOnline users: [49m [34m63dd1bc425a6e3b1cbdc8484,63ddbc66c36ae2b574c29d0d[39m
 [44mOnline users: [49m [34m63dd1bc425a6e3b1cbdc8484,63ddbc66c36ae2b574c29d0d[39m
 [44mOnline users: [49m [34m63dd1bc425a6e3b1cbdc8484,63ddbc66c36ae2b574c29d0d[39m
 [44mOnline users: [49m [34m63dd1bc425a6e3b1cbdc8484,63ddbc66c36ae2b574c29d0d[39m
