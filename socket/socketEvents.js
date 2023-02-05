@@ -129,8 +129,8 @@ const socketEventsHandler = (io) => {
     
 }
 
-setInterval(() => {
-    console.log(chalk.bgBlue('Online users: ') + ' ' + chalk.blue(users.map(u => u.userId)));
-}, 5*1000);
+// setInterval(() => {
+//     console.log(chalk.bgBlue('Online users: ') + ' ' + chalk.blue(users.map(u => u.userId)));
+// }, 5*1000);
 
 module.exports = socketEventsHandler;

@@ -12,8 +12,7 @@ router.post("/message", async (req, res) => {
     const chat = await Chat.findOne({ members });
 
     const msg = req.body.msg;
-    msg.senderId = req.body.senderId;
-    msg.time = Date.now();
+    msg.senderId = msg.senderId; 
     if (!chat) {
       // Create a new chat with those two members
       const newChat = new Chat({

@@ -108,7 +108,7 @@ router.delete('/user/:userId', async(req, res) => {
 // Get user posts
 router.get('/posts/:userId', async(req, res) => {
     try {
-        const posts = await Post.find({ userId: req.params.userId });
+        const posts = await Post.find({ userId: req.params.userId }).sort({ createdAt: 'desc'});
         res.status(200).json(posts);
     } catch (err) {
         res.status(500).json(err); 
@@ -125,10 +125,12 @@ router.get('/timeline', async(req, res) => {
         posts = posts.map(p => ({...p._doc, owner: user}));
         
         const followings = await Promise.all(user.followings.map((followingId) => (User.findById(followingId))));
+        console.log(followings);
             
         const tempPromise = (f) => {
             return new Promise((resolve, reject) => {
-            Post.find({ userId : f._id })
+            if (!f) resolve([]);   // If user is null
+            Post.find({ userId : f._id.toString() })
                 .then(fPosts => {
                     let tempFPosts = fPosts.map(fp => ({...fp._doc, owner: f}));
                     resolve(tempFPosts);
@@ -139,6 +141,7 @@ router.get('/timeline', async(req, res) => {
         const followingsPosts = await Promise.all(followings.map(f => tempPromise((f))));
         
         posts = posts.concat(...followingsPosts);
+        posts = posts.sort((a, b) => a.createdAt > b.createdAt);
         return res.status(200).json(posts);
     } catch (err) {
         console.log(err);
@@ -223,10 +226,13 @@ router.get('/followers/:userId', async(req, res) => {
         const user = await User.findById(req.params.userId);
         if (!user) throw new Error("No such user found!");
 
-        const followers = await Promise.all(user.followers.map(f => User.findById(f).select(["-password", "-email", "-from", "-coverImg", "-createdAt", "-updatedAt"])));
+        let followers = await Promise.all(user.followers.map(f => User.findById(f).select(["-password", "-email", "-from", "-coverImg", "-createdAt", "-updatedAt"])));
+        followers = followers.filter(f => f !== null);
+        console.log(followers);
         res.status(200).json(followers);
     } catch (err) {
         console.log(err);
+        res.status(500).json(err);
     }
 })
 
@@ -237,10 +243,12 @@ router.get('/followings/:userId', async(req, res) => {
         const user = await User.findById(req.params.userId);
         if (!user) throw new Error("No such user found!");
 
-        const followings = await Promise.all(user.followings.map(f => User.findById(f).select(["-password", "-email", "-from", "-coverImg", "-createdAt", "-updatedAt"])));
+        let followings = await Promise.all(user.followings.map(f => User.findById(f).select(["-password", "-email", "-from", "-coverImg", "-createdAt", "-updatedAt"])));
+        followings = followings.filter(f => f !== null);
         res.status(200).json(followings);
     } catch (err) {
         console.log(err);
+        res.status(500).json(err);
     }
 })
 
