@@ -117,12 +117,21 @@ const socketEventsHandler = (io) => {
         })
         
         socket.on('sendNewMessage', (msg) => {
-            console.log(msg);
             try {
                 const recieverSocketId = getSocketId(msg.recieverId);
                 if (recieverSocketId) io.to(recieverSocketId).emit('recieveNewMessage', msg);
             } catch (err) {
                 console.log(err); 
+            }
+        })
+        
+        socket.on('sendNotification' , ({ targetUserId, notification }) => {
+            try {
+                const recieverSocketId = getSocketId(targetUserId);
+                
+                if (recieverSocketId) io.to(recieverSocketId).emit('recieveNotification', notification);
+            } catch (err) {
+                console.log(err);
             }
         })
     })

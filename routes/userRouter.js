@@ -141,7 +141,7 @@ router.get('/timeline', async(req, res) => {
         const followingsPosts = await Promise.all(followings.map(f => tempPromise((f))));
         
         posts = posts.concat(...followingsPosts);
-        posts = posts.sort((a, b) => a.createdAt > b.createdAt);
+        posts = posts.sort((a, b) => Date.parse(a.createdAt) > Date.parse(b.createdAt));
         return res.status(200).json(posts);
     } catch (err) {
         console.log(err);
