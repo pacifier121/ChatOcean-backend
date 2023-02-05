@@ -183,6 +183,20 @@ router.get('/stories/:userId', async(req, res) => {
     }
 })
 
+// Get user's favorite posts
+router.get('/favorites/:userId', async(req, res) => {
+    try {
+        const user = await User.findById(req.params.userId);
+        const posts = await Promise.all(user.favoritePosts.map(f => Post.findById(f)));
+        posts.sort((a, b) => Date.parse(a) > Date.parse(b));
+
+        res.status(200).json(posts);
+    } catch (err) {
+        res.status(500).json(err); 
+    }
+})
+
+
     
 // Follow user
 router.put('/:userId/follow', async(req, res) => {
@@ -297,7 +311,7 @@ router.post('/notification', async(req, res) => {
 // Get notifications
 router.get('/notifications/:userId', async(req, res) => {
     try {
-        const notifications = await Notification.find({ userId: req.params.userId }).sort({ createdAt: 'desc' }).limit(5);
+        const notifications = await Notification.find({ userId: req.params.userId }).sort({ createdAt: 'desc' }).limit(30);
         const readNotifications = notifications.filter(n => n.read);
         const unreadNotifications = notifications.filter(n => !n.read);
         // console.log(readNotifications, unreadNotifications)
