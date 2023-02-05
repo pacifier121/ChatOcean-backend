@@ -5,6 +5,7 @@ const { removeFields } = require('../constants/constants');
 const multer = require('multer');
 const path = require('path');
 const fs = require('fs');
+const Notification = require('../models/Notification');
 
 // Get user
 router.get('/user', async(req, res) => {
@@ -125,7 +126,6 @@ router.get('/timeline', async(req, res) => {
         posts = posts.map(p => ({...p._doc, owner: user}));
         
         const followings = await Promise.all(user.followings.map((followingId) => (User.findById(followingId))));
-        console.log(followings);
             
         const tempPromise = (f) => {
             return new Promise((resolve, reject) => {
@@ -268,6 +268,57 @@ router.put('/:userId/favorite', async(req, res) => {
         }
     } catch (err) {
         console.log(err); 
+        res.status(500).send(err);
+    }
+})
+
+
+// Save notifications of user
+router.post('/notification', async(req, res) => {
+    try {
+        const user = await User.findById(req.body.targetUserId);
+        if (!user) throw new Error("No such user found!"); 
+        
+        // If same notification arrives, ignore it
+        const nfc = req.body.notification;
+        const notif = await Notification.findOne({ userId: user._id, action: nfc.action, postId: nfc.postId });
+        if (notif) throw new Error("Same notification already saved!");
+         
+        const newNotification = new Notification({ ...req.body.notification, userId: user._id });
+        await newNotification.save();
+
+        res.status(200).send(newNotification);
+    } catch (err) {
+        console.log(err);
+        res.status(500).send(err);
+    }
+})
+
+// Get notifications
+router.get('/notifications/:userId', async(req, res) => {
+    try {
+        const notifications = await Notification.find({ userId: req.params.userId }).sort({ createdAt: 'desc' }).limit(5);
+        const readNotifications = notifications.filter(n => n.read);
+        const unreadNotifications = notifications.filter(n => !n.read);
+        // console.log(readNotifications, unreadNotifications)
+         
+        res.status(200).send({ readNotifications, unreadNotifications });
+    } catch (err) {
+        console.log(err);
+        res.status(500).send(err);
+    }
+})
+
+// Get notifications
+router.put('/readNotifications', async(req, res) => {
+    try {
+        const notifications = req.body.notifications; 
+        await Promise.all(notifications.map(n => Notification.findOneAndUpdate({userId: n.userId, postId: n.postId, action: n.action}, { read: true })));
+        
+        res.status(200).send({ msg: "All notifications have been read" });
+    } catch (err) {
+        console.log(err);
+        res.status(500).send(err);
     }
 })
 

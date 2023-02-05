@@ -18,6 +18,13 @@ const NotificationSchema = mongoose.Schema({
     read: {
         type: Boolean,
         default: false
+    },
+    desc: {
+        type: String
+    },
+    username: {
+        // Person who liked the post
+        type: String
     }
 }, {
     timestamps: true
