@@ -134,6 +134,24 @@ const socketEventsHandler = (io) => {
                 console.log(err);
             }
         })
+        
+        socket.on('myFollowRequest', ({ friendId, user }) => {
+            try {
+                const recieverSocketId = getSocketId(friendId);
+                if (recieverSocketId) io.to(recieverSocketId).emit('gotFollowRequest', user);
+            } catch (err) {
+                console.log(err); 
+            }
+        }) 
+        
+        socket.on('yourFollowRequestAccepted', ({ friendId, userId }) => {
+            try {
+                const recieverSocketId = getSocketId(friendId);
+                if (recieverSocketId) io.to(recieverSocketId).emit('myFollowRequestAccepted', userId);
+            } catch (err) {
+                console.log(err); 
+            } 
+        })
     })
     
 }

@@ -64,11 +64,13 @@ router.put('/update', multi_upload,  async(req, res) => {
         } 
 
         // For storing uploaded files info
-        const filesSrc = req.files.map(f => f.filename);
-        const filesType = JSON.parse(req.body.types);
-        for (let i = 0; i < filesSrc.length; i++){
-            updates[filesType[i]] = filesSrc[i];
-        } 
+        if (req.files){
+            const filesSrc = req.files.map(f => f.filename);
+            const filesType = JSON.parse(req.body.types);
+            for (let i = 0; i < filesSrc.length; i++){
+                updates[filesType[i]] = filesSrc[i];
+            } 
+        }
 
         // Removing unnecessary fields
         const userId = req.body.userId;
@@ -84,6 +86,8 @@ router.put('/update', multi_upload,  async(req, res) => {
 })
 
 
+
+
 // Delete user
 router.delete('/user/:userId', async(req, res) => {
     try {
@@ -92,6 +96,9 @@ router.delete('/user/:userId', async(req, res) => {
 
         // Delete all posts of user
         await Post.deleteMany({ userId: user._id });
+        
+        // Delete all notifications of user
+        await Notification.deleteMany({ userId: user._id });
         
         // Delete all the images of user
         fs.unlink(path.join(__dirname, '../public/' + user.avatar), () => { });
@@ -206,6 +213,12 @@ router.put('/:userId/follow', async(req, res) => {
         const alreadyFollowed = user.followers.find(f => f === req.body.userId);
 
         if (alreadyFollowed) throw new Error("You have already followed this user");
+        console.log(user);
+        if (user.accountType === 'private'){
+            await User.findByIdAndUpdate(req.params.userId, { $push: { pendingRequests: req.body.userId } });
+            return res.status(200).json({ msg: "Friend Request has been sent" });
+        }
+
         await User.findByIdAndUpdate(req.params.userId, { $push: { followers: req.body.userId } });
         await User.findByIdAndUpdate(req.body.userId, { $push : { followings: req.params.userId } });
         res.status(200).json({ msg: "User has been followed" });
@@ -242,7 +255,6 @@ router.get('/followers/:userId', async(req, res) => {
 
         let followers = await Promise.all(user.followers.map(f => User.findById(f).select(["-password", "-email", "-from", "-coverImg", "-createdAt", "-updatedAt"])));
         followers = followers.filter(f => f !== null);
-        console.log(followers);
         res.status(200).json(followers);
     } catch (err) {
         console.log(err);
@@ -257,9 +269,24 @@ router.get('/followings/:userId', async(req, res) => {
         const user = await User.findById(req.params.userId);
         if (!user) throw new Error("No such user found!");
 
-        let followings = await Promise.all(user.followings.map(f => User.findById(f).select(["-password", "-email", "-from", "-coverImg", "-createdAt", "-updatedAt"])));
+        let followings = await Promise.all(user.followings.map(f => User.findById(f).select(["-password", "-email", "-from", "-coverImg", "-createdAt", "-updatedAt" ])));
         followings = followings.filter(f => f !== null);
         res.status(200).json(followings);
+    } catch (err) {
+        console.log(err);
+        res.status(500).json(err);
+    }
+})
+
+// Get user follow requests
+router.get('/followRequests/:userId', async(req, res) => {
+    try {
+        const user = await User.findById(req.params.userId);
+        if (!user) throw new Error("No such user found!");
+
+        let requestingUsers = await Promise.all(user.pendingRequests.map(f => User.findById(f).select(["-password", "-email", "-from", "-coverImg", "-createdAt", "-updatedAt"])));
+        requestingUsers = requestingUsers.filter(f => f !== null);
+        res.status(200).json(requestingUsers);
     } catch (err) {
         console.log(err);
         res.status(500).json(err);
@@ -295,7 +322,7 @@ router.post('/notification', async(req, res) => {
         
         // If same notification arrives, ignore it
         const nfc = req.body.notification;
-        const notif = await Notification.findOne({ userId: user._id, action: nfc.action, postId: nfc.postId });
+        const notif = await Notification.findOne({ username: nfc.username, action: nfc.action, postId: nfc.postId });
         if (notif) throw new Error("Same notification already saved!");
          
         const newNotification = new Notification({ ...req.body.notification, userId: user._id });
@@ -327,11 +354,53 @@ router.get('/notifications/:userId', async(req, res) => {
 router.put('/readNotifications', async(req, res) => {
     try {
         const notifications = req.body.notifications; 
-        await Promise.all(notifications.map(n => Notification.findOneAndUpdate({userId: n.userId, postId: n.postId, action: n.action}, { read: true })));
+        await Promise.all(notifications.map(n => Notification.findOneAndUpdate({userId: n.userId, postId: n.postId, action: n.action, username: n.username}, { read: true })));
         
         res.status(200).send({ msg: "All notifications have been read" });
     } catch (err) {
         console.log(err);
+        res.status(500).send(err);
+    }
+})
+
+// Get user follow status
+router.get('/followStatus/:userId/:targetUserId', async(req, res) => {
+    try {
+        const targetUser = await User.findById(req.params.targetUserId);
+        if (!targetUser) throw new Error("No such target user found");
+        
+        if (targetUser.followers.find(f => f === req.params.userId)) return res.status(200).send({ followStatus: 'followed' });
+        else if (targetUser.pendingRequests.find(f => f === req.params.userId)) return res.status(200).send({ followStatus: 'pending' });
+        
+        res.status(200).send({ followStatus: 'unFollowed' });
+    } catch (err) {
+        console.log(err);
+        res.status(500).send(err);
+    }
+})
+
+// Accept follow request
+router.put('/acceptFollowRequest', async(req, res) => {
+    try {
+        const user = await User.findById(req.body.userId);
+        if (!user) throw new Error("No such user found");
+         
+        const friend = await User.findById(req.body.friendId);
+        if (!friend) throw new Error("No such friend found");
+
+        const friendReq = user.pendingRequests.find(r => r === req.body.friendId);
+        if (!friendReq) throw new Error("No such friend request found");
+        
+        user.followers.push(req.body.friendId);
+        user.pendingRequests = user.pendingRequests.filter(r => r !== req.body.friendId);
+        await user.save();
+        
+        friend.followings.push(req.body.userId);
+        await friend.save();
+
+        res.status(200).json({ msg: "Follow request accepted" });
+    } catch (err) {
+        console.log(err); 
         res.status(500).send(err);
     }
 })

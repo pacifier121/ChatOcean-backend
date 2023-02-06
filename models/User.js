@@ -24,6 +24,12 @@ const UserSchema = mongoose.Schema({
         type: String,
         required: true
     },
+    accountType: {
+        type: String,
+        enum: ['public', 'private'],
+        required: true,
+        default: 'public'
+    },
     avatar: {
         type: String,
     },
@@ -41,6 +47,10 @@ const UserSchema = mongoose.Schema({
         default: []
     },
     followings: {
+        type: Array,
+        default: []
+    },
+    pendingRequests: {
         type: Array,
         default: []
     },
