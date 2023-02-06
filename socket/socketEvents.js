@@ -90,7 +90,6 @@ const socketEventsHandler = (io) => {
         socket.on("meOnline", async(userId) => {
             try {
                 const friendSocketId = getSocketId(userId);
-                console.log(friendSocketId, " is online");
                 if (friendSocketId) io.to(friendSocketId).emit('alreadyOnline', userId);
             } catch (err) {
                 console.log(err);
