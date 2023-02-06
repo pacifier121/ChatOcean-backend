@@ -284,7 +284,7 @@ router.get('/followRequests/:userId', async(req, res) => {
         const user = await User.findById(req.params.userId);
         if (!user) throw new Error("No such user found!");
 
-        let requestingUsers = await Promise.all(user.pendingRequests.map(f => User.findById(f).select(["-password", "-email", "-from", "-coverImg", "-createdAt", "-updatedAt"])));
+        let requestingUsers = await Promise.all(user.pendingRequests.map(f => User.findById(f).select(["-password", "-email", "-coverImg", "-createdAt", "-updatedAt"])));
         requestingUsers = requestingUsers.filter(f => f !== null);
         res.status(200).json(requestingUsers);
     } catch (err) {
@@ -293,6 +293,18 @@ router.get('/followRequests/:userId', async(req, res) => {
     }
 })
 
+// Get suggested friends
+router.get('/suggestedFriends/:userId', async(req, res) => {
+    try {
+        const user = await User.findById(req.params.userId);
+        if (!user) throw new Error("No such user found!");
+
+        
+    } catch (err) {
+        console.log(err);
+        res.status(500).json(err);
+    }
+})
 
 // Set post as favorite
 router.put('/:userId/favorite', async(req, res) => {
@@ -382,6 +394,47 @@ router.get('/followStatus/:userId/:targetUserId', async(req, res) => {
 // Accept follow request
 router.put('/acceptFollowRequest', async(req, res) => {
     try {
+        // Checking if user exists
+        const user = await User.findById(req.body.userId);
+        if (!user) throw new Error("No such user found");
+         
+        // Checking if friend request person exists
+        const friend = await User.findById(req.body.friendId);
+        if (!friend) throw new Error("No such friend found");
+
+        // Checking if friend request person's request exists
+        const friendReq = user.pendingRequests.find(r => r === req.body.friendId);
+        if (!friendReq) throw new Error("No such friend request found");
+        
+        // Updating user
+        user.followers.push(req.body.friendId);
+        user.pendingRequests = user.pendingRequests.filter(r => r !== req.body.friendId);
+        await user.save();
+        
+        // Updating friend
+        friend.followings.push(req.body.userId);
+        await friend.save();
+        
+        // Sending notification
+        const newNotification = new Notification({
+            action: 'follow',
+            userId: user._id,
+            username: friend.username,
+            avatar: friend.avatar
+        })
+        await newNotification.save();
+
+        res.status(200).json({ msg: "Follow request accepted" });
+    } catch (err) {
+        console.log(err); 
+        res.status(500).send(err);
+    }
+})
+
+
+// Accept follow request
+router.put('/deleteFollowRequest', async(req, res) => {
+    try {
         const user = await User.findById(req.body.userId);
         if (!user) throw new Error("No such user found");
          
@@ -391,19 +444,14 @@ router.put('/acceptFollowRequest', async(req, res) => {
         const friendReq = user.pendingRequests.find(r => r === req.body.friendId);
         if (!friendReq) throw new Error("No such friend request found");
         
-        user.followers.push(req.body.friendId);
         user.pendingRequests = user.pendingRequests.filter(r => r !== req.body.friendId);
         await user.save();
         
-        friend.followings.push(req.body.userId);
-        await friend.save();
-
-        res.status(200).json({ msg: "Follow request accepted" });
+        res.status(200).json({ msg: "Follow request deleted" });
     } catch (err) {
         console.log(err); 
         res.status(500).send(err);
     }
 })
-
 
 module.exports = router;
