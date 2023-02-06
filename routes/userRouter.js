@@ -284,7 +284,7 @@ router.get('/followRequests/:userId', async(req, res) => {
         const user = await User.findById(req.params.userId);
         if (!user) throw new Error("No such user found!");
 
-        let requestingUsers = await Promise.all(user.pendingRequests.map(f => User.findById(f).select(["-password", "-email", "-coverImg", "-createdAt", "-updatedAt"])));
+        let requestingUsers = await Promise.all(user.pendingRequests.map(f => User.findById(f).select(['avatar', 'username', '_id', 'from'])));
         requestingUsers = requestingUsers.filter(f => f !== null);
         res.status(200).json(requestingUsers);
     } catch (err) {
@@ -299,7 +299,18 @@ router.get('/suggestedFriends/:userId', async(req, res) => {
         const user = await User.findById(req.params.userId);
         if (!user) throw new Error("No such user found!");
 
+        let friends = await Promise.all(user.followings.map(f => User.findById(f).select(['followings'])))
+        friends = friends.filter(f => f);
+
+        let suggestedFriends = [];
+        for (let f of friends){
+            const otherFriends = await Promise.all(f.followings.map(fl => User.findById(fl).select(['avatar', 'username', '_id', 'from']).limit(3)));
+            suggestedFriends = [...suggestedFriends, ...otherFriends];
+        }
         
+        suggestedFriends = suggestedFriends.filter(f => f._id.toString() !== user._id.toString());
+
+        res.status(200).json(suggestedFriends);
     } catch (err) {
         console.log(err);
         res.status(500).json(err);
