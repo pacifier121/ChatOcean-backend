@@ -1,0 +1,165 @@
+User [32mconnected[39m : [34mIhB4ox4f8oa5j_x0AAAB[39m
+User [31mdisconnected[39m : [34mIhB4ox4f8oa5j_x0AAAB[39m
+Error: SocketError: Disconnect: No such user found
+    at Socket.<anonymous> (/home/pacifire/Programs/Web/FullStack/chat-ocean/api/socket/socketEvents.js:79:34)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+User [32mconnected[39m : [34mdFia8T49mrgoaY2fAAAD[39m
+User [31mdisconnected[39m : [34mdFia8T49mrgoaY2fAAAD[39m
+Error: SocketError: Disconnect: No such user found
+    at Socket.<anonymous> (/home/pacifire/Programs/Web/FullStack/chat-ocean/api/socket/socketEvents.js:79:34)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+User [32mconnected[39m : [34m8DX7zmhNKLk5RfL5AAAF[39m
+User [31mdisconnected[39m : [34m8DX7zmhNKLk5RfL5AAAF[39m
+Error: SocketError: Disconnect: No such user found
+    at Socket.<anonymous> (/home/pacifire/Programs/Web/FullStack/chat-ocean/api/socket/socketEvents.js:79:34)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+User [32mconnected[39m : [34mEcs921Vplfg3PyxrAAAH[39m
+User [31mdisconnected[39m : [34mEcs921Vplfg3PyxrAAAH[39m
+Error: SocketError: Disconnect: No such user found
+    at Socket.<anonymous> (/home/pacifire/Programs/Web/FullStack/chat-ocean/api/socket/socketEvents.js:79:34)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+User [32mconnected[39m : [34mIzGAJTN0ovV9ghofAAAJ[39m
+User [31mdisconnected[39m : [34mIzGAJTN0ovV9ghofAAAJ[39m
+User [32mconnected[39m : [34m1kERY9cSdEn5-GWMAAAL[39m
+User [31mdisconnected[39m : [34mIzGAJTN0ovV9ghofAAAJ[39m
+User [31mdisconnected[39m : [34m1kERY9cSdEn5-GWMAAAL[39m
+Error: SocketError: Disconnect: No such user found
+    at Socket.<anonymous> (/home/pacifire/Programs/Web/FullStack/chat-ocean/api/socket/socketEvents.js:79:34)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at runNextTicks (node:internal/process/task_queues:65:3)
+    at processImmediate (node:internal/timers:437:9)
+Error: SocketError: Disconnect: No such user found
+    at Socket.<anonymous> (/home/pacifire/Programs/Web/FullStack/chat-ocean/api/socket/socketEvents.js:79:34)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+User [32mconnected[39m : [34msoJgtlLdA--uzeyiAAAN[39m
+User [31mdisconnected[39m : [34msoJgtlLdA--uzeyiAAAN[39m
+Error: SocketError: Disconnect: No such user found
+    at Socket.<anonymous> (/home/pacifire/Programs/Web/FullStack/chat-ocean/api/socket/socketEvents.js:79:34)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+User [32mconnected[39m : [34mTsDNnPrkEy1cSvqeAAAP[39m
+User [31mdisconnected[39m : [34mTsDNnPrkEy1cSvqeAAAP[39m
+Error: SocketError: Disconnect: No such user found
+    at Socket.<anonymous> (/home/pacifire/Programs/Web/FullStack/chat-ocean/api/socket/socketEvents.js:79:34)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+User [32mconnected[39m : [34mLIxPcrEKH_ButgKOAAAR[39m
+User [31mdisconnected[39m : [34mLIxPcrEKH_ButgKOAAAR[39m
+User [32mconnected[39m : [34mI5aO3DY1oTzpQZwNAAAT[39m
+User [31mdisconnected[39m : [34mLIxPcrEKH_ButgKOAAAR[39m
+User [31mdisconnected[39m : [34mI5aO3DY1oTzpQZwNAAAT[39m
+User [32mconnected[39m : [34mQXxUJAjJYmz8ogLrAAAV[39m
+Error: SocketError: Disconnect: No such user found
+    at Socket.<anonymous> (/home/pacifire/Programs/Web/FullStack/chat-ocean/api/socket/socketEvents.js:79:34)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+Error: SocketError: Disconnect: No such user found
+    at Socket.<anonymous> (/home/pacifire/Programs/Web/FullStack/chat-ocean/api/socket/socketEvents.js:79:34)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+User [32mconnected[39m : [34mrZPV4ap3Wu9PCHvtAAAX[39m
+Error: SocketError: Connection: No such user found
+    at Socket.<anonymous> (/home/pacifire/Programs/Web/FullStack/chat-ocean/api/socket/socketEvents.js:45:34)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+Error: SocketError: Logout: No such user found
+    at Socket.<anonymous> (/home/pacifire/Programs/Web/FullStack/chat-ocean/api/socket/socketEvents.js:61:34)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+User [31mdisconnected[39m : [34mrZPV4ap3Wu9PCHvtAAAX[39m
+User [32mconnected[39m : [34mWuxC8IsNY15LlIA8AAAZ[39m
+User [32mconnected[39m : [34mHgdrbaIQ2-1ZUw6uAAAb[39m
+User [31mdisconnected[39m : [34mrZPV4ap3Wu9PCHvtAAAX[39m
+User [31mdisconnected[39m : [34mWuxC8IsNY15LlIA8AAAZ[39m
+User [31mdisconnected[39m : [34mHgdrbaIQ2-1ZUw6uAAAb[39m
+Error: SocketError: Disconnect: No such user found
+    at Socket.<anonymous> (/home/pacifire/Programs/Web/FullStack/chat-ocean/api/socket/socketEvents.js:79:34)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at runNextTicks (node:internal/process/task_queues:65:3)
+    at processImmediate (node:internal/timers:437:9)
+Error: SocketError: Disconnect: No such user found
+    at Socket.<anonymous> (/home/pacifire/Programs/Web/FullStack/chat-ocean/api/socket/socketEvents.js:79:34)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at runNextTicks (node:internal/process/task_queues:65:3)
+    at processImmediate (node:internal/timers:437:9)
+Error: SocketError: Disconnect: No such user found
+    at Socket.<anonymous> (/home/pacifire/Programs/Web/FullStack/chat-ocean/api/socket/socketEvents.js:79:34)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+User [32mconnected[39m : [34m73BrDydrtTR9Kmb_AAAd[39m
+User [31mdisconnected[39m : [34m73BrDydrtTR9Kmb_AAAd[39m
+Error: SocketError: Disconnect: No such user found
+    at Socket.<anonymous> (/home/pacifire/Programs/Web/FullStack/chat-ocean/api/socket/socketEvents.js:79:34)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+User [32mconnected[39m : [34m93AqiM6iHC7jFNgQAAAf[39m
+User [31mdisconnected[39m : [34mQXxUJAjJYmz8ogLrAAAV[39m
+Error: SocketError: Disconnect: No such user found
+    at Socket.<anonymous> (/home/pacifire/Programs/Web/FullStack/chat-ocean/api/socket/socketEvents.js:79:34)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+User [32mconnected[39m : [34mK-QNTTe0FB5I6Jb6AAAh[39m
+User [31mdisconnected[39m : [34mK-QNTTe0FB5I6Jb6AAAh[39m
+Error: SocketError: Disconnect: No such user found
+    at Socket.<anonymous> (/home/pacifire/Programs/Web/FullStack/chat-ocean/api/socket/socketEvents.js:79:34)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+User [32mconnected[39m : [34mvqGAzJclXvC3s3wFAAAj[39m
+User [31mdisconnected[39m : [34mvqGAzJclXvC3s3wFAAAj[39m
+Error: SocketError: Disconnect: No such user found
+    at Socket.<anonymous> (/home/pacifire/Programs/Web/FullStack/chat-ocean/api/socket/socketEvents.js:79:34)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+User [32mconnected[39m : [34msR8JMLeopfeaxcTWAAAl[39m
+User [31mdisconnected[39m : [34msR8JMLeopfeaxcTWAAAl[39m
+Error: SocketError: Disconnect: No such user found
+    at Socket.<anonymous> (/home/pacifire/Programs/Web/FullStack/chat-ocean/api/socket/socketEvents.js:79:34)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+User [32mconnected[39m : [34m2TSTQlQ_F-WAlaqEAAAn[39m
+User [31mdisconnected[39m : [34m2TSTQlQ_F-WAlaqEAAAn[39m
+Error: SocketError: Disconnect: No such user found
+    at Socket.<anonymous> (/home/pacifire/Programs/Web/FullStack/chat-ocean/api/socket/socketEvents.js:79:34)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+User [32mconnected[39m : [34mUmcn2hUoY_BTEjLyAAAp[39m
+User [31mdisconnected[39m : [34mUmcn2hUoY_BTEjLyAAAp[39m
+User [32mconnected[39m : [34mJ2vFgsj-ZK2ObLmhAAAr[39m
+User [31mdisconnected[39m : [34m93AqiM6iHC7jFNgQAAAf[39m
+User [32mconnected[39m : [34mJyuvdeGYNij2A2B4AAAt[39m
+User [31mdisconnected[39m : [34m93AqiM6iHC7jFNgQAAAf[39m
+User [31mdisconnected[39m : [34mJyuvdeGYNij2A2B4AAAt[39m
+Error: SocketError: Disconnect: No such user found
+    at Socket.<anonymous> (/home/pacifire/Programs/Web/FullStack/chat-ocean/api/socket/socketEvents.js:79:34)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at runNextTicks (node:internal/process/task_queues:65:3)
+    at processImmediate (node:internal/timers:437:9)
+Error: SocketError: Disconnect: No such user found
+    at Socket.<anonymous> (/home/pacifire/Programs/Web/FullStack/chat-ocean/api/socket/socketEvents.js:79:34)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+User [32mconnected[39m : [34mvzQ126plYldYkAAJAAAv[39m
+User [31mdisconnected[39m : [34mvzQ126plYldYkAAJAAAv[39m
+Error: SocketError: Disconnect: No such user found
+    at Socket.<anonymous> (/home/pacifire/Programs/Web/FullStack/chat-ocean/api/socket/socketEvents.js:79:34)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+User [32mconnected[39m : [34m1RB2F41lkLwASeEZAAAx[39m
+User [31mdisconnected[39m : [34m1RB2F41lkLwASeEZAAAx[39m
+Error: SocketError: Disconnect: No such user found
+    at Socket.<anonymous> (/home/pacifire/Programs/Web/FullStack/chat-ocean/api/socket/socketEvents.js:79:34)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+User [32mconnected[39m : [34mguGgiCfxs1f6SO2wAAAz[39m
+User [31mdisconnected[39m : [34mguGgiCfxs1f6SO2wAAAz[39m
+User [31mdisconnected[39m : [34mguGgiCfxs1f6SO2wAAAz[39m
+Error: SocketError: Disconnect: No such user found
+    at Socket.<anonymous> (/home/pacifire/Programs/Web/FullStack/chat-ocean/api/socket/socketEvents.js:79:34)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
